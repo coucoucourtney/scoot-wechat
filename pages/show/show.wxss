@@ -33,9 +33,9 @@
 
 .price .h1 {
   position: absolute;
-  top: 10rpx;
+  top: -4rpx;
   right: 100rpx;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
 

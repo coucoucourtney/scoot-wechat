@@ -39,6 +39,7 @@
 			"currentL": -1,
 			"list": []
 		},
+<<<<<<< HEAD
 		"miniprogram": {
 			"current": 0,
 			"list": [
@@ -46,6 +47,19 @@
 					"id": -1,
 					"name": "pages/show/show",
 					"pathName": "pages/show/show",
+=======
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "Index",
+					"pathName": "pages/index/index",
+>>>>>>> master
 					"scene": null
 				}
 			]
