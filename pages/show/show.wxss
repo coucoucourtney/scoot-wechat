@@ -1,1 +1,96 @@
-/* pages/show/show.wxss */
+.product-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.product-title .h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15rpx;
+}
+
+.product-title .p {
+  font-size: 17px;
+}
+
+.title {
+  padding: 35rpx;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  margin-bottom: 100rpx;
+}
+
+.title .h1 {
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.price {
+  position: relative;
+}
+
+.price .h1 {
+  position: absolute;
+  top: -4rpx;
+  right: 100rpx;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.year {
+  display: flex;
+}
+
+.year .h3 {
+  font-weight: bold;
+  margin-right: 140rpx;
+  margin-bottom: 20rpx;
+}
+
+
+.top-speed {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.top-speed .h3 {
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+
+.battery {
+  display: flex;
+}
+
+.battery .h3 {
+  font-weight: bold;
+  margin-right: 98rpx;
+}
+
+.product-detail {
+  margin-left: 180rpx;
+  font-size: 14px;
+}
+
+.btn-dark {
+  color: white;
+  /* border: 4rpx solid white; */
+  padding: 17rpx 70rpx;
+  /* padding-top: 5rpx; */
+  border-radius: 10rpx;
+  font-weight: bolder;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  width: 1200rpx;
+  text-align: center;
+  margin: 15rpx 0 0rpx 0;
+  font-size: 22rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin-top: 120rpx;
+}

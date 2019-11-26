@@ -8,6 +8,13 @@ Page({
 
   },
 
+  goToPost: function (e) {
+    let id = this.data.scooter.id
+    wx.navigateTo({
+      url: `/pages/post/post?id=${id}`,
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
