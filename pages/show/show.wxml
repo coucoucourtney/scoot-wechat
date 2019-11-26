@@ -1,2 +1,39 @@
-<!--pages/show/show.wxml-->
-<text>pages/show/show.wxml</text>
+<view class="product-banner" style="background-image: url(https://images.unsplash.com/photo-1531166170349-20878432d2eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);">
+</view>
+
+<view class="title">
+  <view class="product-title">
+    <view class="h2">Scooter model</view>
+    <text class="p">Location</text>
+  </view>
+    <view class="price">
+      <view class="h2">RMB</view>
+      <view class="h2">/Day</view>
+      <view class="h1">90</view>
+    </view>
+</view>
+
+ <view class="product-detail">
+  <view class="year">
+    <view class="h3">Year:</view>
+    <view>2019</view>
+  </view>
+  <view class="top-speed">
+    <view class="h3">Top speed:</view>
+    <view>60 km/h</view>
+  </view>
+  <view class="battery">
+    <view class="h3">Battery:</view>
+    <view>Something</view>
+  </view>
+</view>
+
+<button class="btn-dark">BOOK</button>
+
+<!-- <view class="footer">
+  <view class="footer-links">
+    <navigator bindtap="switchTo" url="/images/icons/scoot.svg"></navigator>
+    <navigator bindtap="switchTo"></navigator>
+    <navigator bindtap="switchTo"><i class="far fa-user"></i></navigator>
+  </view>
+</view> -->

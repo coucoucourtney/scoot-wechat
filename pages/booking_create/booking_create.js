@@ -1,4 +1,4 @@
-// pages/show/show.js
+// pages/booking_create/booking_create.js
 Page({
 
   /**
@@ -8,19 +8,28 @@ Page({
 
   },
 
-  goToPost: function (e) {
-    let id = this.data.scooter.id
-    wx.navigateTo({
-      url: `/pages/post/post?id=${id}`,
-    })
-  },
-
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
 
   },
+
+  // createBooking: function (event) {
+  //   let newBooking = {};
+  //   newBooking.confirmation = event.detail.value.confirmation
+  //   wx.request({
+      // url: 'http://localhost:3000/api/v1/bookings',
+      // method: 'post',
+      // data: newBooking,
+      // success: function(res) {
+      //   console.log(res)
+      // }
+
+  //   })
+
+  // },
+  
 
   /**
    * Lifecycle function--Called when page is initially rendered

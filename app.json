@@ -5,6 +5,7 @@
     "pages/user/user",
 "pages/scooter_edit/scooter_edit",
 "pages/scooter_create/scooter_create",
+"pages/booking_create/booking_create",
 "pages/user_edit/user_edit",
 "pages/bookings/bookings",
 "pages/confirmation/confirmation"
