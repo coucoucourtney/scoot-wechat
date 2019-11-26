@@ -14,7 +14,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.3",
-	"appid": "wx466b2d9b2cc366f3",
+	"appid": "wx0eaea3e00f2088ea",
 	"projectname": "Scoot",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -50,6 +50,13 @@
 					"id": -1,
 					"name": "Index",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Create Booking",
+					"pathName": "pages/booking_create/booking_create",
 					"scene": null
 				}
 			]
