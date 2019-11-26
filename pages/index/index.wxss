@@ -114,10 +114,11 @@
   display: flex;
   flex-direction: column;
   position:relative;
+  /* align-content: center; not working*/
 }
 
 .price{
-  font-size: 50rpx;
+  font-size: 40rpx;
   padding: 0;
   margin: 0;
   position: absolute;

@@ -14,20 +14,21 @@
   </view> -->
 
 <view class="cards">
-  <view wx:for="{{[1,2,3,4,5,6]}}" wx:key="{{index}}" class="card-product" bindtap="tapCard" data-id="{{scooter.id}}">
-    <image class="card-img" mode="aspectFill" src='{{imageUrl}}'/>
-    <view class="card-product-infos">
-      <image mode="aspectFill" src='{{imageUrl}}' class="avatar"/>
-      <view class="info-section">
-        <view class="h2">Name</view>
-        <view class="p">location</view>
-      </view>
-      <view class="price-section">
-        <view class="price">90</view>
-        <view class="rmb">RMB</view>
+  <view wx:for="{{scooters}}" wx:for-item="scooter" >
+    <view class="card-product" bindtap="tapCard" data-id="{{scooter.id}}">
+      <image class="card-img" mode="aspectFill" src='{{scooter.picture}}'/>
+      <view class="card-product-infos">
+        <image mode="aspectFill" src='{{scooter.user.picture}}' class="avatar"/>
+        <view class="info-section">
+          <view class="h2">{{scooter.model}}</view>
+          <view class="p">{{scooter.location}}</view>
+        </view>
+        <view class="price-section">
+          <view class="price">{{scooter.price}}</view>
+          <view class="rmb">RMB</view>
+        </view>
       </view>
     </view>
-
   </view>
   
 </view>

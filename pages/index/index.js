@@ -24,23 +24,23 @@ Page({
 
   onLoad: function (options) {
 
-  //   let page = this;
+    let page = this;
 
   // // Get api data
-  // wx.request({
-  //   url: "http://localhost:3000/api/v1/scooters",
-  //   method: 'GET',
-  //   success(res) {
-  //     const scooters = res.data.scooters;
+  wx.request({
+    url: "http://localhost:3000/api/v1/scooters",
+    method: 'GET',
+    success(res) {
+      const scooters = res.data.scooters;
+  console.log(scooters);
+      // Update local data
+      page.setData({
+        scooters: scooters
+      });
 
-  //     // Update local data
-  //     page.setData({
-  //       scooters: scooters
-  //     });
-
-  //     wx.hideToast();
-  //     }
-    // });
+      wx.hideToast();
+      }
+    });
 },
 
     // if (app.globalData.userInfo) {
