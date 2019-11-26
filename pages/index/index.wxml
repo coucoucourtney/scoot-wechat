@@ -1,4 +1,4 @@
-<view class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(/images/scoot-index-banner.jpeg );">
+<view class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(/images/scoot-index-banner.jpeg);">
     <view class="banner-h1">/scoot/</view>
     <view class="btn btn-ghost" href="#">RENT A SCOOTER</view>
     <view class="btn btn-ghost" href="#">ADD A SCOOTER</view>
@@ -14,10 +14,10 @@
   </view> -->
 
 <view class="cards">
-  <view class="card-product">
-    <image class="card-img" mode="aspectFill" src='https://images.unsplash.com/photo-1495608312049-285ae516323d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80'/>
+  <view wx:for="{{[1,2,3,4,5,6]}}" wx:key="{{index}}" class="card-product">
+    <image class="card-img" mode="aspectFill" src='{{imageUrl}}'/>
     <view class="card-product-infos">
-      <image mode="aspectFill" src='#'/>
+      <image mode="aspectFill" src='{{imageUrl}}' class="avatar"/>
       <view>
         <view class="h2">Name</view>
         <view class="p">scooter location</view>
@@ -28,54 +28,6 @@
       </view>
     </view>
 
-    
   </view>
-  <view class="card-product">
-    <image class="card-img" mode="aspectFill" src='https://images.unsplash.com/photo-1495608312049-285ae516323d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80'/>
-    <view class="card-product-infos">
-      <image mode="aspectFill" src='#'/>
-      <view>
-        <view class="h2">Name</view>
-        <view class="p">scooter location</view>
-      </view>
-      <view>
-        <view class="price">90</view>
-        <view class="rmb">RMB</view>
-      </view>
-    </view>
-
-    
-  </view>
-  <view class="card-product">
-    <image class="card-img" mode="aspectFill" src='https://images.unsplash.com/photo-1495608312049-285ae516323d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80'/>
-    <view class="card-product-infos">
-      <image mode="aspectFill" src='#'/>
-      <view>
-        <view class="h2">Name</view>
-        <view class="p">scooter location</view>
-      </view>
-      <view>
-        <view class="price">90</view>
-        <view class="rmb">RMB</view>
-      </view>
-    </view>
-
-    
-  </view>
-  <view class="card-product">
-    <image class="card-img" mode="aspectFill" src='https://images.unsplash.com/photo-1495608312049-285ae516323d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80'/>
-    <view class="card-product-infos">
-      <image mode="aspectFill" src='#'/>
-      <view>
-        <view class="h2">Name</view>
-        <view class="p">scooter location</view>
-      </view>
-      <view>
-        <view class="price">90</view>
-        <view class="rmb">RMB</view>
-      </view>
-    </view>
-
-    
-  </view>
+  
 </view>
