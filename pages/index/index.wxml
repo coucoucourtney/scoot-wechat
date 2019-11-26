@@ -22,7 +22,7 @@
         <view class="h2">Name</view>
         <view class="p">scooter location</view>
       </view>
-      <view>
+      <view class="price-section">
         <view class="price">90</view>
         <view class="rmb">RMB</view>
       </view>
