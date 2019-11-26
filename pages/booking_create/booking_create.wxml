@@ -1,2 +1,8 @@
-<!--pages/booking_create/booking_create.wxml-->
-<text>pages/booking_create/booking_create.wxml</text>
+<view class='new-form'>
+  <image src="/images/Create Visuals.png" style="width: 80rpx; height: 80rpx;"></image>
+  <view class="h1">Book your scooter</view>
+  <form class="booking-form" bindsubmit="createBooking">
+    <input name="text" placeholder="YYYY-MM-DD"></input>
+    <button class='submit-button' form-type="submit">Submit</button>
+  </form>
+</view>

@@ -50,6 +50,13 @@
 					"id": -1,
 					"name": "Index",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Create Booking",
+					"pathName": "pages/booking_create/booking_create",
 					"scene": null
 				}
 			]

@@ -15,6 +15,22 @@ Page({
 
   },
 
+  // createBooking: function (event) {
+  //   let newBooking = {};
+  //   newBooking.confirmation = event.detail.value.confirmation
+  //   wx.request({
+      // url: 'http://localhost:3000/api/v1/bookings',
+      // method: 'post',
+      // data: newBooking,
+      // success: function(res) {
+      //   console.log(res)
+      // }
+
+  //   })
+
+  // },
+  
+
   /**
    * Lifecycle function--Called when page is initially rendered
    */
