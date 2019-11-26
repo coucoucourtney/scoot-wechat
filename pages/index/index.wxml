@@ -14,7 +14,7 @@
   </view> -->
 
 <view class="cards">
-  <view wx:for="{{[1,2,3,4,5,6]}}" wx:key="{{index}}" class="card-product">
+  <view wx:for="{{[1,2,3,4,5,6]}}" wx:key="{{index}}" class="card-product" bindtap="tapCard" data-id="{{scooter.id}}">
     <image class="card-img" mode="aspectFill" src='{{imageUrl}}'/>
     <view class="card-product-infos">
       <image mode="aspectFill" src='{{imageUrl}}' class="avatar"/>

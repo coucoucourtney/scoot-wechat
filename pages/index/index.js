@@ -10,32 +10,21 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     imageUrl: "https://images.unsplash.com/photo-1495608312049-285ae516323d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
   },
+// BIND TAP TO CLICK CARD THROUGH TO SHOW PAGE
+  tapCard: function (event) {
+    console.log(event)
+    let id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/show/show?id=${id}`,
+    })
+  },
+  // END OF BIND TAP
+
   //事件处理函数
 
-  // // FONT - UBUNTU
-  // loadFontFace() {
-  //   console.log("loading font")
-  //   const self = this
-  //   wx.loadFontFace({
-  //     family: this.data.fontFamily,
-  //     source: 'url("https://fonts.googleapis.com/css?family=Ubuntu:400,500i&display=swap")',
-  //     success(res) {
-  //       console.log(res.status)
-  //       self.setData({ loaded: true })
-  //     },
-  //     fail: function (res) {
-  //       console.log(res.status)
-  //     },
-  //     complete: function (res) {
-  //       console.log(res.status)
-  //     }
-  //   });
-  // },
-
   onLoad: function (options) {
-    this.loadFontFace()
+
   //   let page = this;
-	// ...
 
   // // Get api data
   // wx.request({
