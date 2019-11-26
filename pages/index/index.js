@@ -31,6 +31,25 @@ Page({
   //   });
   // },
 
+  switchToShowPage: function () {
+    wx.switchTab({
+      url: '/pages/show/show'
+    })
+  },
+
+  switchToBookingCreatePage: function () {
+    wx.switchTab({
+      "pages/booking_create/booking_create",
+      url: ''
+    })
+  },
+
+  switchToScooterCreatePage: function () {
+    wx.switchTab({
+      url: 'pages/scooter_create/scooter_create'
+    })
+  },
+
   onLoad: function (options) {
     this.loadFontFace()
   //   let page = this;
