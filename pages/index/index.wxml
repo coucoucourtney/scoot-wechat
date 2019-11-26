@@ -18,9 +18,9 @@
     <image class="card-img" mode="aspectFill" src='{{imageUrl}}'/>
     <view class="card-product-infos">
       <image mode="aspectFill" src='{{imageUrl}}' class="avatar"/>
-      <view>
+      <view class="info-section">
         <view class="h2">Name</view>
-        <view class="p">scooter location</view>
+        <view class="p">location</view>
       </view>
       <view class="price-section">
         <view class="price">90</view>

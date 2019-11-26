@@ -19,7 +19,7 @@
   font-size: 120rpx;
   font-weight: medium;
   font-family: Ubuntu;
-  opacity: .88;
+  opacity: .85;
   text-align: center; 
   margin-bottom: 70rpx;
   font-style: oblique;
@@ -73,6 +73,8 @@
   border-radius: 6rpx;
   box-shadow: 0rpx 4rpx 6rpx rgba(0,0,0,0.20);
   border: 3.5rpx solid white;
+  margin-bottom: 10rpx;
+
 }
 
 .avatar {
@@ -80,16 +82,26 @@
   width: 65rpx;
   border-radius: 50%;
   margin-right: 10rpx;
-  margin-top: 10rpx;
 }
 
-.card-product-info{
+.card-product-infos{
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  justify-content: space-between;
+}
+
+.info-section{
+  display: flex;
+  flex-direction: column;
+  position:relative;
 }
 
 .h2{
   font-size: 30rpx;
-  font-weight: bold;
+  position: absolute;
+  bottom: 17rpx;
 }
 
 .p{
@@ -97,15 +109,19 @@
 }
 
 .price-section{
-  align-content: center;
+  justify-content: center;
+  /* not working to center content */
   display: flex;
+  flex-direction: column;
+  position:relative;
 }
 
 .price{
   font-size: 50rpx;
-  font-weight: bold;
   padding: 0;
   margin: 0;
+  position: absolute;
+  bottom: 17rpx;
 }
 
 .rmb{
