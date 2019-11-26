@@ -4,7 +4,8 @@
     "pages/show/show",
     "pages/user/user",
 "pages/scooter_edit/scooter_edit",
-"pages/scooter_create/scooter_create"
+"pages/scooter_create/scooter_create",
+"pages/booking_create/booking_create"
   ],
   "window": {
     "backgroundTextStyle": "light",
