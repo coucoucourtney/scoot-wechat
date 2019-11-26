@@ -1,1 +1,68 @@
-/* pages/show/show.wxss */
+.product-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.product-title .h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15rpx;
+}
+
+.product-title .p {
+  font-size: 17px;
+}
+
+.title {
+  padding: 35rpx;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  margin-bottom: 50rpx;
+}
+
+.title .h1 {
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.price {
+  position: relative;
+}
+
+.price .h1 {
+  position: absolute;
+  top: 10rpx;
+  right: 100rpx;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.year {
+  display: flex;
+}
+
+.year .h3 {
+  font-weight: bold;
+  margin-right: 140rpx;
+}
+
+
+.top-speed {
+  display: flex;
+}
+
+.top-speed .h3 {
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+
+.battery {
+  display: flex;
+}
+
+.battery .h3 {
+  font-weight: bold;
+  margin-right: 50rpx;
+}
