@@ -46,18 +46,26 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "pages/index/index",
 					"pathName": "pages/index/index",
+					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
 					"name": "pages/show/show",
 					"pathName": "pages/show/show",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bookings/bookings",
+					"pathName": "pages/bookings/bookings",
 					"scene": null
 				}
 			]
