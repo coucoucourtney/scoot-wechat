@@ -8,10 +8,11 @@ Page({
 
   },
 
-  goToPost: function (e) {
+  goToBookingPage: function (e) {
     let id = this.data.scooter.id
     wx.navigateTo({
-      url: `/pages/post/post?id=${id}`,
+      url: `/pages/booking_create/booking_create`,
+      // ?id=${id}?
     })
   },
 

@@ -5,14 +5,24 @@ Page({
    * Page initial data
    */
   data: {
-
+  // scooter_id=  
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    // const page = this
+    // const id = options.data-id
+    // console.log(options)
+    // wx.request({
+    //   url: `http://localhost:3000/api/v1/scooters/${id}`,
+    //   success: function (res) {
+    //     const scooter = res.data
+    //     console.log(scooter.id)
+    //     page.setData({ scooter })
+    //   }
+    // })
   },
 
   // createBooking: function (event) {
