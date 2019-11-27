@@ -40,6 +40,15 @@ Page({
     })
   },
 
+// not working
+  // goToBookingsPage: function(e) {
+  //   // let id = e.currentTarget.dataset.id
+  //   // console.log(e)
+  //   wx.navigateTo({
+  //     pagePath: "pages/bookings/bookings",
+  //   })
+  // },
+
   /**
    * Lifecycle function--Called when page is initially rendered
    */
@@ -64,8 +73,19 @@ Page({
   /**
    * Lifecycle function--Called when page unload
    */
-  onUnload: function () {
-
+  onUnload: function (options) {
+    const id = options.id
+    console.log(options)
+    const page = this
+    console.log(options)
+    wx.request({
+      url: `https://rent-scoot.herokuapp.com/api/v1/scooters/${id}`,
+      success: function (res) {
+        const scooter = res.data
+        console.log(scooter)
+        page.setData({ scooter })
+      }
+    })
   },
 
   /**

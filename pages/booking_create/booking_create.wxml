@@ -2,7 +2,7 @@
   <view class="h1">Book your scooter</view>
   <form class="booking-form" bindsubmit="createBooking">
     <input name="text" placeholder="YYYY-MM-DD"></input>
-    <button class='btn btn-black' form-type="submit">Submit</button>
+    <button class='btn btn-black' form-type="submit" bindtap="goToConfirmationPage" data-id="{{scooter.id}}">Submit</button>
   </form>
 </view>
 
