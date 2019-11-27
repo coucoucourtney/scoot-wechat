@@ -1,1 +1,70 @@
-/* pages/bookings/bookings.wxss */
+.card-booking {
+  overflow: hidden;
+  height: 120rpx;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.card-booking image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+
+.card-booking h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-booking text {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-booking .card-booking-infos {
+  padding: 16px;
+}
+
+.user-image {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin-right: 50rpx;
+}
+
+.title {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.title .h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  margin-bottom: 15rpx;
+}
+
+.btn-detail {
+  color: blue;
+  font-size: 14px;
+}
+
+
+

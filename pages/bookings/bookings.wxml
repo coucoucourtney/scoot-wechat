@@ -1,2 +1,24 @@
-<!--pages/bookings/bookings.wxml-->
-<text>pages/bookings/bookings.wxml</text>
+<view class="title">
+  <image class="user-image" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"></image>
+  <view class="h1">Bookings</view>
+</view>
+
+<view class="subtitle">
+  <text class="h2">Your reservations</text>
+  <navigator class="btn-detail">See all</navigator>
+</view>
+
+
+<view class="card-booking">
+  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"></image>
+  <view class="card-product-infos">
+    <h2>Product name</h2>
+    <text>Product description with relevant info only.</text>
+  </view>
+</view>
+
+
+
+
+<text class="h2">Reservations for your scooter</text>
+
