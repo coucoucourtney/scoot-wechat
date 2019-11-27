@@ -30,7 +30,7 @@ Page({
     let newBooking = {};
     newBooking.confirmation = true
     newBooking.scooter_id = event.currentTarget.dataset.id
-    newBooking.user_id = 17
+    newBooking.user_id = 24
     console.log(newBooking);
   
     wx.request({
