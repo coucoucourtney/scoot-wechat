@@ -1,2 +1,15 @@
-<!--pages/user_edit/user_edit.wxml-->
-<text>pages/user_edit/user_edit.wxml</text>
+<view class="title">
+  <image class="user-image" src="https://images.unsplash.com/photo-1531166170349-20878432d2eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></image>
+  <view class="h1">Update your profile</view>
+</view>
+
+<view class='new-form'>
+  <form class="booking-form" bindsubmit="createBooking">
+    <input name="text" placeholder="Name"></input>
+    <input name="text" placeholder="Description"></input>
+    <input name="text" placeholder="Phone number"></input>
+    <input name="text" placeholder="Location"></input>
+    <button class='btn-black' form-type="submit" bindtap="" data-id="{{scooter.id}}">UPDATE</button>
+    <button class='btn-grey' form-type="submit" bindtap="" data-id="{{scooter.id}}">DELETE</button>
+  </form>
+</view>
