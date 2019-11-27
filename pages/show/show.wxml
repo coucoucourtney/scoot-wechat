@@ -30,10 +30,10 @@
 
 <button class="btn-dark" bindtap="goToBookingPage" data-id="{{scooter.id}}">BOOK</button>
 
-<!-- <view class="footer">
-  <view class="footer-links">
-    <navigator bindtap="switchTo" url="/images/icons/scoot.svg"></navigator>
-    <navigator bindtap="switchTo"></navigator>
-    <navigator bindtap="switchTo"><i class="far fa-user"></i></navigator>
-  </view>
-</view> -->
+
+
+<view class="footer">
+ <navigator url="#"><image src=""></image></navigator>
+ <navigator url="#"><image src=""></image></navigator>
+ <navigator url="#"><image src=""></image></navigator>
+</view>

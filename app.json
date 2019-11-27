@@ -10,6 +10,32 @@
 "pages/bookings/bookings",
 "pages/confirmation/confirmation"
   ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/scoot.jpg",
+        "selectedIconPath": "images/icons/scoot.jpg"
+      },
+      {
+        "pagePath": "pages/bookings/bookings",
+        "iconPath": "images/icons/booking-history.jpg",
+        "selectedIconPath": "images/icons/booking-history.jpg"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/icons/user.jpg",
+        "selectedIconPath": "images/icons/user.jpg"
+      }
+    ]
+  },
+  
+
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

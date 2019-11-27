@@ -21,7 +21,6 @@ Page({
   // END OF BIND TAP
 
   //事件处理函数
-
   
   onLoad: function (options) {
 
