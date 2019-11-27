@@ -64,6 +64,7 @@
   width: 45vw;
   /* height: 35vw; */
   margin: 6rpx;
+  margin-bottom: 10rpx;
 }
 
 .card-product .card-img{
@@ -73,7 +74,7 @@
   border-radius: 6rpx;
   box-shadow: 0rpx 4rpx 6rpx rgba(0,0,0,0.20);
   border: 3.5rpx solid white;
-  margin-bottom: 10rpx;
+  margin-bottom: 20rpx;
 
 }
 
@@ -96,6 +97,7 @@
   display: flex;
   flex-direction: column;
   position:relative;
+  padding-right: 10rpx;
 }
 
 .h2{
@@ -105,7 +107,7 @@
 }
 
 .p{
-  font-size: 25rpx;
+  font-size: 30rpx;
 }
 
 .price-section{
@@ -115,6 +117,8 @@
   flex-direction: column;
   position:relative;
   /* align-content: center; not working*/
+  margin-top: 10rpx;
+  align-items: flex-end;
 }
 
 .price{
@@ -128,5 +132,5 @@
 .rmb{
   font-size: 25rpx;
   padding: 0;
-  margin: 0;
+  margin-top: 10rpx;
 }

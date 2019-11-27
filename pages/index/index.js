@@ -29,7 +29,7 @@ Page({
 
   // // Get api data
   wx.request({
-    url: "http://localhost:3000/api/v1/scooters",
+    url: "https://rent-scoot.herokuapp.com/api/v1/scooters",
     method: 'GET',
     success(res) {
       const scooters = res.data.scooters;
