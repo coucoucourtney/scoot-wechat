@@ -28,17 +28,29 @@ Page({
 
   createBooking: function (event) {
     let newBooking = {};
-    newBooking.confirmation = event.detail.value.confirmation
+    newBooking.confirmation = true
+    newBooking.scooter_id = event.currentTarget.dataset.id
+    newBooking.user_id = 17
+    console.log(newBooking);
+  
     wx.request({
       url: 'https://rent-scoot.herokuapp.com/api/v1/bookings',
+
       method: 'post',
       data: newBooking,
       success: function(res) {
         console.log(res)
       }
-
     })
 
+  },
+
+  goToConfirmationPage: function (e) {
+    let id = e.currentTarget.dataset.id
+    console.log(e)
+    wx.navigateTo({
+      url: `/pages/confirmation/confirmation?id=${id}`,
+    })
   },
   
 

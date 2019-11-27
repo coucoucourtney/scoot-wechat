@@ -4,32 +4,43 @@
 <view class="li">
   <text class="title">Reservation number</text>
   <text>424</text>
+  <!-- generate booking number -->
 </view>
 
 <view class="li">
   <text class="title">Model</text>
-  <text class="p">AK47-12345 NIU</text>
+  <text class="p">{{scooter.model}}</text>
+  <!-- <text class="title">Model</text>
+  <text class="p">AK47-12345 NIU</text> -->
 </view>
 
 <view class="li">
   <text class="title">Year</text>
-  <text class="p">2015</text>
+  <text class="p">{{scooter.year}}</text>
+  <!-- <text class="title">Year</text>
+  <text class="p">2015</text> -->
 </view>
 
 <view class="li">
   <text class="title">Top speed</text>
-  <text class="p">5 kmph</text>
+  <text class="p">{{scooter.top_speed}}</text>
+  <!-- <text class="title">Top speed</text>
+  <text class="p">5 kmph</text> remove kpmh from db -->
 </view>
 
 <view class="li">
   <text class="title">Battery</text>
-  <text class="p">Something</text>
+  <text class="p">{{scooter.battery}}</text>
+  <!-- <text class="title">Battery</text>
+  <text class="p">Something</text> -->
 </view>
 
 <view class="li-price">
   <text class="title">Total price</text>
-  <text class="price">Something</text>
+  <text class="price">{{scooter.price}}</text>
+  <!-- <text class="title">Total price</text>
+  <text class="price">Something</text> -->
 </view>
 
-<view class="btn btn-black" href="#">GO TO YOUR BOOKINGS</view>
+<view class="btn btn-black" bindtap="goToBookingsPage">GO TO YOUR BOOKINGS</view>
 <view class="btn btn-ghost" href="#">CANCEL YOUR RESERVATION</view>
