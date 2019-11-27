@@ -31,4 +31,5 @@
   <text class="price">Something</text>
 </view>
 
-<view class="btn btn-ghost" href="#">CANCEL</view>
+<view class="btn btn-black" href="#">GO TO YOUR BOOKINGS</view>
+<view class="btn btn-ghost" href="#">CANCEL YOUR RESERVATION</view>

@@ -46,7 +46,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -73,6 +73,13 @@
 					"id": -1,
 					"name": "pages/confirmation/confirmation",
 					"pathName": "pages/confirmation/confirmation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/booking_create/booking_create",
+					"pathName": "pages/booking_create/booking_create",
 					"scene": null
 				}
 			]
