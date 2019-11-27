@@ -5,25 +5,25 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50rpx;
+  margin-bottom: 45rpx;
+  padding-bottom: 25rpx;
 }
 
 .banner-h1 {
-
   color: white;
   text-shadow: 4rpx 0rpx 4rpx rgba(0,0,0,0.25);
-  font-size: 110rpx;
+  font-size: 120rpx;
   font-weight: medium;
   font-family: Ubuntu;
   opacity: .85;
   text-align: center; 
-  margin-bottom: 50rpx;
+  margin-bottom: 70rpx;
   font-style: oblique;
-  
+  font-weight: bold;
 }
 
 .btn-ghost {
@@ -35,9 +35,9 @@
   font-weight: bold;
   opacity: 1;
   transition: opacity 0.3s ease;
-  width: 550rpx;
+  width: 540rpx;
   text-align: center; 
-  margin: 15rpx 0 8rpx 0;
+  margin: 15rpx 0 0rpx 0;
   font-size: 22rpx;
   height: 60rpx;
   display: flex;
@@ -47,14 +47,86 @@
 
 .cards {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 30rpx;
-  width: 90vw;
+  flex-flow: row wrap;
+  /* align-content: space-between; */
+  justify-content: center;
+  /* margin: 0 20rpx; */
+  width: 100vw;
 }
 
 .card-product{
-  border: 1rpx solid grey;
+  /* border: 1rpx solid grey; */
   border-radius: 5px;
   display: flex;
-  width: 40vw;
+  flex-direction: column;
+  width: 45vw;
+  /* height: 35vw; */
+  margin: 6rpx;
+}
+
+.card-product .card-img{
+  width: 100% !important;
+  height: 200rpx !important;
+  display: block !important;
+  border-radius: 6rpx;
+  box-shadow: 0rpx 4rpx 6rpx rgba(0,0,0,0.20);
+  border: 3.5rpx solid white;
+  margin-bottom: 10rpx;
+
+}
+
+.avatar {
+  height: 65rpx;
+  width: 65rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+
+.card-product-infos{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  justify-content: space-between;
+}
+
+.info-section{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+}
+
+.h2{
+  font-size: 30rpx;
+  position: absolute;
+  bottom: 17rpx;
+}
+
+.p{
+  font-size: 25rpx;
+}
+
+.price-section{
+  justify-content: center;
+  /* not working to center content */
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  /* align-content: center; not working*/
+}
+
+.price{
+  font-size: 40rpx;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 17rpx;
+}
+
+.rmb{
+  font-size: 25rpx;
+  padding: 0;
+  margin: 0;
 }

@@ -7,29 +7,20 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    imageUrl: "https://images.unsplash.com/photo-1495608312049-285ae516323d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
   },
-  //事件处理函数
+// BIND TAP TO CLICK CARD THROUGH TO SHOW PAGE
+  tapCard: function (event) {
+    console.log(event)
+    let id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/show/show?id=${id}`,
+    })
+  },
+  // END OF BIND TAP
 
-  // // FONT - UBUNTU
-  // loadFontFace() {
-  //   console.log("loading font")
-  //   const self = this
-  //   wx.loadFontFace({
-  //     family: this.data.fontFamily,
-  //     source: 'url("https://fonts.googleapis.com/css?family=Ubuntu:400,500i&display=swap")',
-  //     success(res) {
-  //       console.log(res.status)
-  //       self.setData({ loaded: true })
-  //     },
-  //     fail: function (res) {
-  //       console.log(res.status)
-  //     },
-  //     complete: function (res) {
-  //       console.log(res.status)
-  //     }
-  //   });
-  // },
+  //事件处理函数
 
   switchToShowPage: function () {
     wx.switchTab({
@@ -51,25 +42,24 @@ Page({
   },
 
   onLoad: function (options) {
-    this.loadFontFace()
-  //   let page = this;
-	// ...
+
+    let page = this;
 
   // // Get api data
-  // wx.request({
-  //   url: "http://localhost:3000/api/v1/scooters",
-  //   method: 'GET',
-  //   success(res) {
-  //     const scooters = res.data.scooters;
+  wx.request({
+    url: "http://localhost:3000/api/v1/scooters",
+    method: 'GET',
+    success(res) {
+      const scooters = res.data.scooters;
+  console.log(scooters);
+      // Update local data
+      page.setData({
+        scooters: scooters
+      });
 
-  //     // Update local data
-  //     page.setData({
-  //       scooters: scooters
-  //     });
-
-  //     wx.hideToast();
-  //     }
-    // });
+      wx.hideToast();
+      }
+    });
 },
 
     // if (app.globalData.userInfo) {
