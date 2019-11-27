@@ -18,11 +18,11 @@
     <view class="card-product" bindtap="tapCard" data-id="{{scooter.id}}">
       <image class="card-img" mode="aspectFill" src='{{scooter.picture}}'/>
       <view class="card-product-infos">
-        <image mode="aspectFill" src='{{scooter.user_avatar}}' 
-      class="avatar"/>
+        <!-- <image mode="aspectFill" src='{{scooter.avatar}}' 
+      class="avatar"/> -->
       <!-- change attr according to new attr when sent -->
         <view class="info-section">
-          <view class="h2">{{scooter.user_name}}</view>
+          <!-- <view class="h2">{{scooter.user_name}}</view> -->
           <!-- change attr according to new attribute when sent -->
           <view class="p">{{scooter.location}}</view>
         </view>

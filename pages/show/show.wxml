@@ -28,7 +28,7 @@
   </view>
 </view>
 
-<button class="btn-dark">BOOK</button>
+<button class="btn-dark" bindtap="goToBookingPage" data-id="{{scooter.id}}">BOOK</button>
 
 <!-- <view class="footer">
   <view class="footer-links">

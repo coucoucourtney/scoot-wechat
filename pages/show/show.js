@@ -5,13 +5,13 @@ Page({
    * Page initial data
    */
   data: {
-
   },
 
-  goToPost: function (e) {
-    let id = this.data.scooter.id
+  goToBookingPage: function (e) {
+    let id = e.currentTarget.dataset.id
+    console.log(e)
     wx.navigateTo({
-      url: `/pages/post/post?id=${id}`,
+      url: `/pages/booking_create/booking_create?id=${id}`,
     })
   },
 
@@ -20,13 +20,14 @@ Page({
    */
   onLoad: function (options) {
     const page = this
-    const id = options.data-id
+    const id = options.id
+    console.log(1, options)
     console.log(options)
     wx.request({
-      url: `http://localhost:3000/api/v1/scooters/${id}`,
+      url: `https://rent-scoot.herokuapp.com/api/v1/scooters/${id}`,
       success: function (res) {
         const scooter = res.data
-        console.log(scooter.id)
+        console.log(scooter)
         page.setData({ scooter })
       }
     })

@@ -12,23 +12,34 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const id = options.id
+    console.log(options)
+    const page = this
+    console.log(options)
+    wx.request({
+      url: `https://rent-scoot.herokuapp.com/api/v1/scooters/${id}`,
+      success: function (res) {
+        const scooter = res.data
+        console.log(scooter)
+        page.setData({ scooter })
+      }
+    })
   },
 
-  // createBooking: function (event) {
-  //   let newBooking = {};
-  //   newBooking.confirmation = event.detail.value.confirmation
-  //   wx.request({
-      // url: 'http://localhost:3000/api/v1/bookings',
-      // method: 'post',
-      // data: newBooking,
-      // success: function(res) {
-      //   console.log(res)
-      // }
+  createBooking: function (event) {
+    let newBooking = {};
+    newBooking.confirmation = event.detail.value.confirmation
+    wx.request({
+      url: 'https://rent-scoot.herokuapp.com/api/v1/bookings',
+      method: 'post',
+      data: newBooking,
+      success: function(res) {
+        console.log(res)
+      }
 
-  //   })
+    })
 
-  // },
+  },
   
 
   /**
