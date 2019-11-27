@@ -19,23 +19,17 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-      let page = this;
-
-      // // Get api data
-      wx.request({
-        url: "http://localhost:3000/api/v1/scooters",
-        method: 'GET',
-        success(res) {
-          const scooters = res.data.scooters;
-          console.log(scooters);
-          // Update local data
-          page.setData({
-            scooters: scooters
-          });
-
-          wx.hideToast();
-        }
-      });
+    const page = this
+    const id = options.data-id
+    console.log(options)
+    wx.request({
+      url: `http://localhost:3000/api/v1/scooters/${id}`,
+      success: function (res) {
+        const scooter = res.data
+        console.log(scooter.id)
+        page.setData({ scooter })
+      }
+    })
     },
 
   /**

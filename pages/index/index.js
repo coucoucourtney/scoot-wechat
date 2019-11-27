@@ -22,25 +22,7 @@ Page({
 
   //事件处理函数
 
-  switchToShowPage: function () {
-    wx.switchTab({
-      url: '/pages/show/show'
-    })
-  },
-
-  switchToBookingCreatePage: function () {
-    wx.switchTab({
-      "pages/booking_create/booking_create",
-      url: ''
-    })
-  },
-
-  switchToScooterCreatePage: function () {
-    wx.switchTab({
-      url: 'pages/scooter_create/scooter_create'
-    })
-  },
-
+  
   onLoad: function (options) {
 
     let page = this;
