@@ -10,7 +10,7 @@
     "pages/user_edit/user_edit",
     "pages/bookings/bookings",
     "pages/confirmation/confirmation",
-    "pages/booking_request/booking_request"
+    "pages/booking_request/booking_request",
     "pages/map/map"
 
   ],
