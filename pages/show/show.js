@@ -27,7 +27,7 @@ Page({
     console.log(1, options)
     console.log(options)
     wx.request({
-      url: host + `${id}`,
+      url: host + `scooters/${id}`,
       success: function (res) {
         const scooter = res.data
         console.log(scooter)
