@@ -22,15 +22,15 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.3",
-
-	"appid": "wx466b2d9b2cc366f3",
-
+	"appid": "wx64359a36b1c6ba8d",
 	"projectname": "Scoot",
 	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -47,14 +47,12 @@
 		"game": {
 			"list": []
 		},
-
 		"gamePlugin": {
 			"current": -1,
 			"list": []
 		},
 		"miniprogram": {
 			"current": 0,
-
 			"list": [
 				{
 					"id": -1,
@@ -90,7 +88,6 @@
 					"pathName": "pages/booking_create/booking_create",
 					"query": "",
 					"scene": null
-
 				},
 				{
 					"id": -1,
@@ -110,8 +107,14 @@
 					"id": -1,
 					"name": "pages/user_edit/user_edit",
 					"pathName": "pages/user_edit/user_edit",
+					"query": "",
 					"scene": null
-
+				},
+				{
+					"id": -1,
+					"name": "pages/map/map",
+					"pathName": "pages/map/map",
+					"scene": null
 				}
 			]
 		}

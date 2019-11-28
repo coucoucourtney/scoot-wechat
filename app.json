@@ -8,7 +8,8 @@
 "pages/booking_create/booking_create",
 "pages/user_edit/user_edit",
 "pages/bookings/bookings",
-"pages/confirmation/confirmation"
+"pages/confirmation/confirmation",
+"pages/map/map"
   ],
   "tabBar": {
     "color": "#7A7E83",
@@ -33,8 +34,11 @@
       }
     ]
   },
-  
-
+  "permission": {
+    "scope.userLocation": {
+      "desc": "Scoot would like like to obtain your location information"
+    }
+  },
 
   "window": {
     "backgroundTextStyle": "light",
