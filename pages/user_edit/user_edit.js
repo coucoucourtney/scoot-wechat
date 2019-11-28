@@ -1,4 +1,7 @@
 // pages/user_edit/user_edit.js
+const app = getApp()
+const host = app.globalData.host;
+
 Page({
 
   /**

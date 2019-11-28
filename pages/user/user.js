@@ -1,4 +1,7 @@
 // pages/user/user.js
+const app = getApp()
+const host = app.globalData.host;
+
 Page({
 
   /**

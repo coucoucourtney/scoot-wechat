@@ -1,4 +1,7 @@
 // pages/booking_create/booking_create.js
+const app = getApp()
+const host = app.globalData.host;
+
 Page({
 
   /**

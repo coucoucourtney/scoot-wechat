@@ -1,4 +1,7 @@
 // pages/show/show.js
+const app = getApp()
+const host = app.globalData.host;
+
 Page({
 
   /**
@@ -24,7 +27,7 @@ Page({
     console.log(1, options)
     console.log(options)
     wx.request({
-      url: `https://rent-scoot.herokuapp.com/api/v1/scooters/${id}`,
+      url: host + `${id}`,
       success: function (res) {
         const scooter = res.data
         console.log(scooter)
