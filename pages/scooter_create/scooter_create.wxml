@@ -9,8 +9,10 @@
     <input name="location" placeholder="Location"></input>
     <input name="price" placeholder="Price in RMB"></input>
     
-    <image name="picture" src='{{tempFilePath}}'></image>
-    <button class='button-light' form-type="submit" bindtap="takePhoto">UPLOAD A PICTURE</button>
+
+    <image src='{{tempFilePath}}'></image>
+    <button class='button-light' form-type="submit" bindtap="takePhoto">Upload a picture</button>
+
     <button class='btn-black' form-type="submit" bindtap="" data-id="{{user.id}}">SUBMIT</button>
   </form>
 </view>
