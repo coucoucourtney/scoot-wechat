@@ -9,16 +9,28 @@
 </view>
 
 
+
+<!-- <block wx:for="{{}}" wx:key="" wx:for-item=""> -->
 <view class="card-booking">
   <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"></image>
   <view class="card-product-infos">
-    <h2>Product name</h2>
-    <text>Product description with relevant info only.</text>
+    <view class="h2">Date</view>
+    <text class="p">Details</text>
   </view>
 </view>
 
+<!-- </block> -->
 
-
-
-<text class="h2">Reservations for your scooter</text>
-
+<view class="subtitle2">
+  <text class="h2">Reservations for your scooter</text>
+  <navigator class="btn-detail">See all</navigator>
+</view>
+<!-- <block wx:for="{{}}" wx:key="" wx:for-item=""> -->
+<view class="card-booking">
+  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"></image>
+  <view class="card-product-infos">
+    <view class="h2">Date</view>
+    <text class="p">Details</text>
+  </view>
+</view>
+<!-- </block> -->

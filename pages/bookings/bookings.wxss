@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   padding: 10rpx;
-  margin-bottom: 20rpx;
+  margin-bottom: 15rpx;
 }
 
 .card-booking image {
@@ -66,5 +66,12 @@
   font-size: 14px;
 }
 
+.subtitle2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  margin-bottom: 15rpx;
+  margin-top: 80rpx;
+}
 
 

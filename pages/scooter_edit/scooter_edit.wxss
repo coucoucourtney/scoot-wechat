@@ -1,1 +1,68 @@
-/* pages/scooter_edit/scooter_edit.wxss */
+.scooter-image {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin-right: 50rpx;
+}
+
+.title {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  /* margin-bottom: 10rpx; */
+}
+
+.title .h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 70rpx;
+  margin-top: 20rpx;
+}
+
+.btn-black {
+  width: 200rpx;
+  color: white;
+  background-color: black;
+  padding: 20rpx;
+  padding-top: 25rpx;
+  border-radius: 10rpx;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+  margin-top: 70rpx;
+}
+
+.btn-grey {
+  width: 200rpx;
+  color: rgb(163, 163, 163);
+  border: 1px solid rgb(163, 163, 163);
+  background-color: white;
+  padding: 20rpx;
+  padding-top: 25rpx;
+  border-radius: 10rpx;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+  margin-top: 20rpx;
+  font-weight: light;
+}
+
+.new-form {
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+input {
+  margin: 25rpx auto;
+  padding: 15rpx;
+  border: 2px solid black;
+  width: 600rpx;
+  text-align: left;
+  font-size: 12px;
+}
