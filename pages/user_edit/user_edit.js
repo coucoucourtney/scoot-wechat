@@ -15,7 +15,38 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    const page = this
+    const id = options.id
+    console.log(options.id)
+    wx.request({
+      url: host + `users/${id}`,
+      success: function (res) {
+        const story = res.data
+        page.setData({ user })
+      }
+    })
+  },
 
+  updateUser: function(event) {
+    console.log(event)
+    let id = this.data.user.id
+    let newUser = {};
+    newUser.name = event.detail.value.name
+    newUser.description = event.detail.value.description
+    newUser.phone_number = event.detail.value.phone_number
+    newUser.location = event.detail.value.location
+    wx.request({
+      url: host + `users/${id}`,
+      method: 'put',
+      data: newUser,
+      success: function (res) {
+        console.log(res)
+        const id = res.data.id
+        wx.redirectTo({
+          url: `/pages/user/user?id=${id}`,
+        })
+      }
+    })
   },
 
   /**
@@ -66,4 +97,6 @@ Page({
   onShareAppMessage: function () {
 
   }
+
+
 })

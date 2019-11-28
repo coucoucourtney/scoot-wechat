@@ -1,1 +1,84 @@
 /* pages/user/user.wxss */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50rpx;
+  padding-bottom: 70rpx;
+  box-sizing: border-box;
+} 
+
+.avatar {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+}
+
+.scooter-img {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+
+.h1-name {
+  font-size: 35rpx;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.h1 {
+  font-size: 30rpx;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.p {
+  font-weight: 150;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.btn-ghost {
+  color: rgb(99, 99, 99);
+  border: 3rpx solid rgb(99, 99, 99);
+  padding: 17rpx 70rpx;
+  /* padding-top: 5rpx; */
+  border-radius: 10rpx;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  width: 100rpx;
+  text-align: center; 
+  font-size: 22rpx;
+  height: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rpx auto;
+}
+
+.user-info{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50rpx;
+}
+
+.block-pair{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25rpx;
+}
+
+.scooter-section{
+  margin-top: 90rpx;
+}
+
+.subtitle{
+  margin-left: 40rpx;
+}
