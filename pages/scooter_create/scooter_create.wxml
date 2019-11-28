@@ -1,12 +1,13 @@
 <view class='new-form'>
   <view class="h1">Add a scooter</view>
-  <form class="booking-form" bindsubmit="createBooking">
-    <input name="text" placeholder="Model"></input>
-    <input name="text" placeholder="Year"></input>
+
+  <form class="booking-form" bindsubmit="createScooter">
+    <input name="model" placeholder="Model"></input>
+    <input name="year" placeholder="Year"></input>
     <input name="text" placeholder="Battery"></input>
-    <input name="text" placeholder="Top speed"></input>
-    <input name="text" placeholder="Location"></input>
-    <input name="text" placeholder="Price"></input>
-    <button class='btn-black' form-type="submit" bindtap="goToConfirmationPage" data-id="{{scooter.id}}">SUBMIT</button>
+    <input name="battery" placeholder="Top speed"></input>
+    <input name="location" placeholder="Location"></input>
+    <input name="price" placeholder="Price "></input>
+    <button class='btn-black' form-type="submit" bindtap="goToConfirmationPage" data-id="{{user.id}}">SUBMIT</button>
   </form>
 </view>
