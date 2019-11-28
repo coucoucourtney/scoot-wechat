@@ -1,0 +1,15 @@
+<view>Get current location</view>
+<view>--------------------</view>
+<view>Latitude : {{latitude}}</view>
+<view>Longitude : {{longitude}}</view>
+<view>Accuracy : {{accuracy}}</view>
+
+<map
+id="myMap"
+style="width: 100%; height: 500px;"
+longitude="{{longitude}}" latitude="{{latitude}}"
+scale='16'
+subkey="ER5BZ-L4PCU-HLTVJ-44OCJ-GIGHZ-QWF4K"
+polyline="{{polyline}}"
+markers="{{markers}}"
+></map>

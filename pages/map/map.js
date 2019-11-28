@@ -1,40 +1,52 @@
-// pages/show/show.js
-const app = getApp()
-const host = app.globalData.host;
-
+// pages/map/map.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-  },
-
-  goToBookingPage: function (e) {
-    let id = e.currentTarget.dataset.id
-    console.log(e)
-    wx.navigateTo({
-      url: `/pages/booking_create/booking_create?id=${id}`,
-    })
+    markers: [
+      {
+        iconPath: "/images/icons/scoot_marker.png", // **1
+        id: 0,
+        latitude: 31.22352,
+        longitude: 121.45591,
+        width: 40,
+        height: 40
+      }//, add more markers here
+    ]
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const page = this
-    const id = options.id
-    console.log(1, options)
-    console.log(options)
-    wx.request({
-      url: host + `scooters/${id}`,
-      success: function (res) {
-        const scooter = res.data
-        console.log(scooter)
-        page.setData({ scooter })
+    const that = this
+    wx.getLocation({
+      type: 'GCJ-02',
+      success: function(res) {
+        const latitude = res.latitude
+        const longitude = res.longitude
+        const accuracy = res.accuracy
+        that.setData({latitude, longitude, accuracy})
       }
     })
-    },
+
+    // wx.authorize({
+    //   scope: 'scope.userLocation',
+    //   success(res) {
+    //     console.log(res)
+    //     wx.chooseLocation({
+    //       success: function (res) {
+    //         console.log(res)
+    //       }
+    //     })
+    //   },
+    //   fail(err) {
+    //     console.log(err)
+    //   }
+    // })
+  },
 
   /**
    * Lifecycle function--Called when page is initially rendered
