@@ -53,7 +53,7 @@ Page({
     const page = this
     console.log(options)
     wx.request({
-      url: `https://rent-scoot.herokuapp.com/api/v1/scooters/${id}`,
+      url: host + `scooters/${id}`,
       success: function (res) {
         const scooter = res.data
         console.log(scooter)
@@ -70,7 +70,7 @@ Page({
     console.log(newBooking);
   
     wx.request({
-      url: 'https://rent-scoot.herokuapp.com/api/v1/bookings',
+      url: host + 'bookings',
 
       method: 'post',
       data: newBooking,

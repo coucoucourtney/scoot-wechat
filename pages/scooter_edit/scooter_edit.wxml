@@ -1,5 +1,5 @@
 <view class="title">
-  <image class="scooter-image" src="https://images.unsplash.com/photo-1531166170349-20878432d2eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></image>
+  <image class="scooter-image" src="{{scooter.picture}}"></image>
   <view class="h1">Update your scooter</view>
 </view>
 
@@ -12,6 +12,6 @@
     <input name="text" placeholder="Location"></input>
     <input name="text" placeholder="Price"></input>
     <button class='btn-black' form-type="submit" bindtap="" data-id="{{scooter.id}}">UPDATE</button>
-    <button class='btn-grey' form-type="submit" bindtap="" data-id="{{scooter.id}}">DELETE</button>
+    <button class='btn-grey' form-type="submit" bindtap="goToUserPage" data-id="{{scooter.id}}">DELETE</button>
   </form>
 </view>
