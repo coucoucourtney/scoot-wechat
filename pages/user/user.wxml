@@ -1,2 +1,45 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+
+<view class="container">
+ <image mode="aspectFill" src='{{user.avatar}}'
+      class="avatar"/>
+  <text class="h1-name">{{user.name}}</text>
+  <text class="p">{{user.description}}</text>
+</view>
+  <!-- block of user info -->
+      <text class="h1-name subtitle">YOUR INFO</text>
+   <view class="user-info">
+    <view class="block-pair">
+      <text class="h1">PHONE</text>
+      <text class="p">{{user.phone_number}}</text>
+    </view>
+    <view class="block-pair">
+      <text class="h1">LOCATION</text>
+      <text class="p">{{user.location}}</text>
+    </view>
+    <view class="block-pair">
+      <text class="h1">WECHAT ID</text>
+       <text class="p">billybob</text>
+      <!-- <text class="p">{{user.wechat_id}}</text> -->
+    </view>
+  </view>
+<view>
+    <view class="btn btn-ghost" bindtap="editUser" data-id="{{user.id}}">EDIT</view>
+</view>
+ <!-- block of scooters  -->
+  <view class="scooter-section">
+    <text class="h1-name subtitle">YOUR SCOOTERS</text>
+    <view class="user-info">
+    <!-- <view wx:for="{{scooters}}" wx:for-item="scooter" > -->
+    <view class="block-pair" indtap="editScooter" data-id="{{user.scooter_id}}">
+      <image mode="aspectFill" src='{{users.scooters.picture}}' 
+            class="scooter-img"/>
+            <text class="p">{{users.scooters.id}}-{{users.scooters.model}}</text>
+      </view>
+    </view>
+    <view class="btn btn-ghost" bindtap="addScooter" data-id="{{user.id}}">NEW</view>
+  </view>
+
+<!-- </view> -->
+
+ 
