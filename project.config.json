@@ -112,6 +112,14 @@
 				},
 				{
 					"id": -1,
+
+					"name": "pages/map/map",
+					"pathName": "pages/map/map",
+					"scene": null
+
+					"name": "pages/booking_request/booking_request",
+					"pathName": "pages/booking_request/booking_request",
+
 					"name": "index",
 					"pathName": "pages/index/index",
 					"query": "",
@@ -123,6 +131,7 @@
 					"pathName": "pages/user_edit/user_edit",
 					"query": "",
 					"scene": null
+
 				}
 			]
 		}
