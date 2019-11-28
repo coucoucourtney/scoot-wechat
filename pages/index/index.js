@@ -19,6 +19,7 @@ Page({
       url: `/pages/show/show?id=${id}`
     })
   },
+
   // END OF BIND TAP
 
   //事件处理函数

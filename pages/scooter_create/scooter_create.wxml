@@ -1,5 +1,6 @@
 <view class='new-form'>
   <view class="h1">Add a scooter</view>
+
   <form class="booking-form" bindsubmit="createScooter">
     <input name="model" placeholder="Model"></input>
     <input name="year" placeholder="Year"></input>
