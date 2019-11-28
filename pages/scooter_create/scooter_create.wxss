@@ -20,6 +20,20 @@
   margin-top: 70rpx;
 }
 
+.button-light {
+  width: 2000rpx;
+  color: rgb(150, 150, 150);
+  border: 1px solid rgb(150, 150, 150);
+  background-color: white;
+  padding: 20rpx;
+  padding-top: 25rpx;
+  border-radius: 10rpx;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+  margin-top: 70rpx;
+}
+
 .new-form {
   text-align: center;
   margin-top: 100rpx;
