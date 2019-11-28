@@ -20,7 +20,7 @@ Page({
         page.setData({
           tempFilePath
         })
-        // when submit the form add this function
+        // !!!!!! WHEN SUBMIT THE FOR ADD THIS :
         // new AV.File('file-name', {
         //   blob: {
         //     uri: tempFilePath,
