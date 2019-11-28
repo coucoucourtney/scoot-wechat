@@ -47,3 +47,9 @@ input {
   text-align: left;
   font-size: 12px;
 }
+
+image {
+  height: 80px;
+  width: 80px;
+  border: 1px solid lightgrey;
+}

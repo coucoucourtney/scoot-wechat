@@ -10,37 +10,27 @@ Page({
   onLoad: function () {
   },
   takePhoto: function () {
+    let page = this;
     wx.chooseImage({
       count: 1,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
       success: function (res) {
         let tempFilePath = res.tempFilePaths[0];
-        new AV.File('file-name', {
-          blob: {
-            uri: tempFilePath,
-          },
-        }).save().then(
-          file => console.log(file.url())
-        ).catch(console.error);
+        page.setData({
+          tempFilePath
+        })
+        // when submit the form add this function
+        // new AV.File('file-name', {
+        //   blob: {
+        //     uri: tempFilePath,
+        //   },
+        // }).save().then(
+        //   file => console.log(file.url())
+        // ).catch(console.error);
       }
     });
   },
-
-
-
-  takePhoto: function () {
-    wx.chooseImage({
-      count: 1,
-      sizeType: ['original'],
-      sourceType: ['album', 'camera'],
-      success: function (res) {
-        var tempFilePaths = res.tempFilePaths
-        console.log(tempFilePaths)
-      }
-    })
-  },
-
 
   previewMyImage: function (files) {
     wx.previewImage({
