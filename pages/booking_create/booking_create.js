@@ -1,4 +1,7 @@
 // pages/booking_create/booking_create.js
+
+const app = getApp()
+const host = app.globalData.host;
 const date = new Date()
 const years = []
 const months = []
@@ -15,6 +18,7 @@ for (let i = 1; i <= 12; i++) {
 for (let i = 1; i <= 31; i++) {
   days.push(i)
 }
+
 
 Page({
 

@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const host = app.globalData.host;
 
 Page({
   data: {
@@ -28,7 +29,7 @@ Page({
 
   // // Get api data
   wx.request({
-    url: "https://rent-scoot.herokuapp.com/api/v1/scooters",
+    url: host + "scooters",
     method: 'GET',
     success(res) {
       const scooters = res.data.scooters;

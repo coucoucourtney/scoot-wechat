@@ -22,7 +22,9 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.3",
-	"appid": "wx304dffe1363527fb",
+
+	"appid": "wx466b2d9b2cc366f3",
+
 	"projectname": "Scoot",
 	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
@@ -45,8 +47,14 @@
 		"game": {
 			"list": []
 		},
+
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
-			"current": 7,
+			"current": 0,
+
 			"list": [
 				{
 					"id": -1,
@@ -82,6 +90,7 @@
 					"pathName": "pages/booking_create/booking_create",
 					"query": "",
 					"scene": null
+
 				},
 				{
 					"id": -1,
@@ -102,6 +111,7 @@
 					"name": "pages/user_edit/user_edit",
 					"pathName": "pages/user_edit/user_edit",
 					"scene": null
+
 				}
 			]
 		}

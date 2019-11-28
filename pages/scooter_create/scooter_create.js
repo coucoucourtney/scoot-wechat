@@ -1,4 +1,7 @@
 // pages/scooter_create/scooter_create.js
+const app = getApp()
+const host = app.globalData.host;
+
 Page({
 
   /**

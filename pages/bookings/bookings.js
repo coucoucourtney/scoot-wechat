@@ -1,4 +1,7 @@
 // pages/bookings/bookings.js
+const app = getApp()
+const host = app.globalData.host;
+
 Page({
 
   /**
