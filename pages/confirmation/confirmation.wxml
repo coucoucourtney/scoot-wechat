@@ -1,5 +1,5 @@
 <!--pages/confirmation/confirmation.wxml-->
-<view class="h1">Reservation confirmed</view>
+<view class="h1">Reservation pending</view>
 
 <view class="li">
   <text class="title">Reservation number</text>
@@ -37,10 +37,11 @@
 
 <view class="li-price">
   <text class="title">Total price</text>
-  <text class="price">{{scooter.price}}</text>
+  <text class="price">{{scooter.price}}RMB</text>
   <!-- <text class="title">Total price</text>
   <text class="price">Something</text> -->
 </view>
 
 <view class="btn btn-black" bindtap="goToBookingsPage">GO TO YOUR BOOKINGS</view>
 <view class="btn btn-ghost" href="#">CANCEL YOUR RESERVATION</view>
+

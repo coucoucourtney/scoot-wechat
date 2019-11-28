@@ -1,7 +1,7 @@
 <view class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://images.unsplash.com/photo-1562827673-3875cac42143?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80);">
     <view class="banner-h1">/scoot/</view>
-    <view class="btn btn-ghost" href="#">RENT A SCOOTER</view>
-    <view class="btn btn-ghost" href="#">ADD A SCOOTER</view>
+    <view bindtap="scrollToDiv" class="btn btn-ghost" href="#">RENT A SCOOTER</view>
+    <view bindtap="goToNewScooterPage" class="btn btn-ghost" >ADD A SCOOTER</view>
 </view>
 
 
