@@ -25,11 +25,11 @@ Page({
           },
         }).save().then(
           file => {
-            console.log(file.url());
             let imgUrl = file.url();
             page.setData({
               imgUrl
             })
+            console.log(page.data.imgUrl);
           }
         ).catch(console.error);
       }
@@ -51,7 +51,7 @@ Page({
   createScooter: function (event) {
     console.log(event)
     // let id = this.data.user.id
-    const id = 2
+    const id = 1
     let newScooter = {};
     newScooter.model = event.detail.value.model
     newScooter.top_speed = event.detail.value.top_speed
@@ -61,6 +61,7 @@ Page({
     newScooter.year = event.detail.value.year
     newScooter.user_id = id
     newScooter.picture = this.data.imgUrl;
+    console.log(newScooter.picture);
     console.log(newScooter)
     wx.request({
       url: host + `scooters/`,

@@ -3,14 +3,16 @@ const config = require('./key');
 
 // // Initialization of the app
 const AV = require('./utils/av-weapp-min.js');
-AV.init({
+  AV.init({
   appId: config.appId,
   appKey: config.appKey,
-  serverURLs: 'https://goupodwo.lc-cn-n1-shared.com'
+  serverURLs: 'https://haad5d2x.lc-cn-n1-shared.com/'
 });
 
 App({
-  // onLaunch: function () {
+  onLaunch: function () {
+    // wx.BaaS = requirePlugin('sdkPlugin')
+    // wx.BaaS.init('11ca705d4ea9e8e90332')
   //   const host = 'http://localhost:3000/'
   //   console.log('beginning login')
   //   wx.login({
@@ -31,7 +33,8 @@ App({
   //       })
   //     }
   //   })
-  // },
+  },
+  
   globalData: {
     // host: "http://localhost:3000/"
     host: "https://rent-scoot.herokuapp.com/api/v1/"

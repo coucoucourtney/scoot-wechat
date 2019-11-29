@@ -26,24 +26,43 @@ Page({
   
   onLoad: function (options) {
 
-    let page = this;
+  //   let page = this;
 
-  // // Get api data
-  wx.request({
-    url: host + "scooters",
-    method: 'GET',
-    success(res) {
-      const scooters = res.data.scooters;
-  console.log(scooters);
-      // Update local data
-      page.setData({
+  // // // Get api data
+  // wx.request({
+  //   url: host + "scooters",
+  //   method: 'GET',
+  //   success(res) {
+  //     const scooters = res.data.scooters;
+  // console.log(scooters);
+  //     // Update local data
+  //     page.setData({
+  //       scooters: scooters
+  //     });
+
+  //     wx.hideToast();
+  //     }
+  //   });
+},
+
+  onShow: function () {
+    let page = this
+    // let id = this.data.userId || 1;
+    wx.request({
+      url: host + "scooters",
+      success: function (res) {
+        // const user = res.data
+        const scooters = res.data.scooters;
+        console.log(scooters);
+        page.setData({
         scooters: scooters
       });
 
       wx.hideToast();
       }
-    });
-},
+    })
+  },
+  
 
   goToNewScooterPage: function() {
     wx.navigateTo({
