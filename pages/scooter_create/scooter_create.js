@@ -10,37 +10,27 @@ Page({
   onLoad: function () {
   },
   takePhoto: function () {
+    let page = this;
     wx.chooseImage({
       count: 1,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
       success: function (res) {
         let tempFilePath = res.tempFilePaths[0];
-        new AV.File('file-name', {
-          blob: {
-            uri: tempFilePath,
-          },
-        }).save().then(
-          file => console.log(file.url())
-        ).catch(console.error);
+        page.setData({
+          tempFilePath
+        })
+        // !!!!!! WHEN SUBMIT THE FOR ADD THIS :
+        // new AV.File('file-name', {
+        //   blob: {
+        //     uri: tempFilePath,
+        //   },
+        // }).save().then(
+        //   file => console.log(file.url())
+        // ).catch(console.error);
       }
     });
   },
-
-
-
-  takePhoto: function () {
-    wx.chooseImage({
-      count: 1,
-      sizeType: ['original'],
-      sourceType: ['album', 'camera'],
-      success: function (res) {
-        var tempFilePaths = res.tempFilePaths
-        console.log(tempFilePaths)
-      }
-    })
-  },
-
 
   previewMyImage: function (files) {
     wx.previewImage({
@@ -52,13 +42,12 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
 
-  },
 
   createScooter: function (event) {
     console.log(event)
-    let id = this.data.user.id
+    // let id = this.data.user.id
+    const id = 2
     let newScooter = {};
     newScooter.model = event.detail.value.model
     newScooter.top_speed = event.detail.value.top_speed

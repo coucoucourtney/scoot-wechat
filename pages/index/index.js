@@ -45,6 +45,18 @@ Page({
     });
 },
 
+  goToNewScooterPage: function(){
+    wx.navigateTo({
+      url: "/pages/scooter_create/scooter_create",
+    })
+  },
+
+  scrollToDiv: function() {
+    wx.pageScrollTo	({
+      scrollTop: 380,
+    })
+  },
+
     // if (app.globalData.userInfo) {
     //   this.setData({
     //     userInfo: app.globalData.userInfo,

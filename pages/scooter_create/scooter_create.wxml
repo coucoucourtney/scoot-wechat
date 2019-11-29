@@ -4,10 +4,16 @@
   <form class="booking-form" bindsubmit="createScooter">
     <input name="model" placeholder="Model"></input>
     <input name="year" placeholder="Year"></input>
-    <input name="text" placeholder="Battery"></input>
-    <input name="battery" placeholder="Top speed"></input>
+    <input name="battery" placeholder="Battery"></input>
+    <input name="top_speed" placeholder="Top speed in km/h"></input>
     <input name="location" placeholder="Location"></input>
-    <input name="price" placeholder="Price "></input>
-    <button class='btn-black' form-type="submit" bindtap="goToConfirmationPage" data-id="{{user.id}}">SUBMIT</button>
+    <input name="price" placeholder="Price in RMB"></input>
+    <image src='{{tempFilePath}}'></image>
+    <view class="btn-size2">
+      <button class='button-light' form-type="submit" bindtap="takePhoto">Upload a picture</button>
+    </view>
+  <view class="btn-size">
+    <button class='btn-black' form-type="submit" bindtap="" data-id="{{user.id}}">SUBMIT</button>
+  </view>
   </form>
 </view>

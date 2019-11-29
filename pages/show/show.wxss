@@ -94,3 +94,10 @@
   background-color: black;
   margin-top: 120rpx;
 }
+
+.btn-size {
+  margin: 0 auto;
+  width: 650rpx;
+  background-color: black;
+  border-radius: 10rpx;
+}

@@ -29,19 +29,26 @@ Page({
     })
   },
 
-  createBooking: function (event) {
-    let newBooking = {};
-    newBooking.confirmation = event.detail.value.confirmation
-    wx.request({
-      url: host + 'bookings',
-      method: 'post',
-      data: newBooking,
-      success: function (res) {
-        console.log(res)
-      }
-
+  goToBookingsPage: function(){
+    wx.switchTab({
+      url: "/pages/bookings/bookings",
     })
+    console.log('goToBookingsPage')
   },
+
+  // createBooking: function (event) {
+  //   let newBooking = {};
+  //   newBooking.confirmation = event.detail.value.confirmation
+  //   wx.request({
+  //     url: host + 'bookings',
+  //     method: 'post',
+  //     data: newBooking,
+  //     success: function (res) {
+  //       console.log(res)
+  //     }
+
+  //   })
+  // },
 
 // not working
   // goToBookingsPage: function(e) {

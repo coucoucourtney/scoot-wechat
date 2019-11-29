@@ -1,6 +1,7 @@
 <view class='new-form'>
   <view class="h1">Book your scooter</view>
   <form class="booking-form" bindsubmit="createBooking">
+
     <!-- <input class="dateInput" ctype="date" name="text" placeholder="YYYY-MM-DD"></input> -->
     <view class="section">
   <view class="section__title">Pick a pick date</view>
@@ -11,6 +12,7 @@
   </picker>
 </view>
     <button class='btn-black' form-type="submit" bindtap="goToConfirmationPage" data-id="{{scooter.id}}">SUBMIT</button>
+
   </form>
 </view>
 

@@ -64,7 +64,7 @@
   width: 45vw;
   /* height: 35vw; */
   margin: 6rpx;
-  margin-bottom: 10rpx;
+  margin-bottom: 20rpx;
 }
 
 .card-product .card-img{
@@ -74,9 +74,9 @@
   border-radius: 6rpx;
   box-shadow: 0rpx 4rpx 6rpx rgba(0,0,0,0.20);
   border: 3.5rpx solid white;
-  margin-bottom: 20rpx;
-
+  margin-bottom: 5rpx;
 }
+
 
 .avatar {
   height: 65rpx;
