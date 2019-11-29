@@ -63,7 +63,7 @@ Page({
       success: function (res) {
         console.log(res)
         const id = res.data.user_id
-        wx.redirectTo({
+        wx.switchTab({
           url: `/pages/user/user?id=${id}`,
         })
       }

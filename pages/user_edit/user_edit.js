@@ -21,7 +21,7 @@ Page({
     wx.request({
       url: host + `users/${id}`,
       success: function (res) {
-        const story = res.data
+        const user = res.data
         page.setData({ user })
       }
     })
@@ -42,7 +42,7 @@ Page({
       success: function (res) {
         console.log(res)
         const id = res.data.id
-        wx.redirectTo({
+        wx.switchTab({
           url: `/pages/user/user?id=${id}`,
         })
       }

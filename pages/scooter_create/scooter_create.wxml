@@ -10,7 +10,7 @@
     <input name="price" placeholder="Price in RMB"></input>
     <image src='{{tempFilePath}}'></image>
     <view class="btn-size2">
-      <button class='button-light' form-type="submit" bindtap="takePhoto">Upload a picture</button>
+      <button class='button-light' bindtap="takePhoto">Upload a picture</button>
     </view>
   <view class="btn-size">
     <button class='btn-black' form-type="submit" bindtap="" data-id="{{user.id}}">SUBMIT</button>

@@ -66,6 +66,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 50rpx;
+  overflow: scroll;
 }
 
 .block-pair{
