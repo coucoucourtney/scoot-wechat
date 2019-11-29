@@ -13,7 +13,7 @@
       <button class='button-light' form-type="submit" bindtap="takePhoto">Upload a picture</button>
     </view>
   <view class="btn-size">
-    <button class='btn-black' form-type="submit" bindtap="" data-id="{{user.id}}">SUBMIT</button>
+    <button class='btn-black' form-type="submit" data-id="{{user.id}}">SUBMIT</button>
   </view>
   </form>
 </view>

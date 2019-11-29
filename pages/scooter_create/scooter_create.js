@@ -2,7 +2,6 @@
 const app = getApp()
 const host = app.globalData.host;
 const AV = require('../../utils/av-weapp-min.js');
-
 Page({
   data: {
     items: []
@@ -20,22 +19,27 @@ Page({
         page.setData({
           tempFilePath
         })
-        // !!!!!! WHEN SUBMIT THE FOR ADD THIS :
-        // new AV.File('file-name', {
-        //   blob: {
-        //     uri: tempFilePath,
-        //   },
-        // }).save().then(
-        //   file => console.log(file.url())
-        // ).catch(console.error);
+        new AV.File('file-name', {
+          blob: {
+            uri: tempFilePath,
+          },
+        }).save().then(
+          file => {
+            console.log(file.url());
+            let imgUrl = file.url();
+            page.setData({
+              imgUrl
+            })
+          }
+        ).catch(console.error);
       }
     });
   },
 
   previewMyImage: function (files) {
     wx.previewImage({
-      current: '',  // number of index or file path
-      urls: files  // Array of temp files
+      current: '',
+      urls: files 
     })
   },
 
@@ -56,6 +60,8 @@ Page({
     newScooter.battery = event.detail.value.battery
     newScooter.year = event.detail.value.year
     newScooter.user_id = id
+    newScooter.picture = this.data.imgUrl;
+    console.log(newScooter)
     wx.request({
       url: host + `scooters/`,
       method: 'post',
