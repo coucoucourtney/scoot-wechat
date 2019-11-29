@@ -31,7 +31,7 @@
     <text class="h1-name subtitle">YOUR SCOOTERS</text>
     <view class="user-info">
     <view wx:for="{{scooters}}" wx:for-item="scooter" >
-    <view class="block-pair" indtap="editScooter" data-id="{{user.scooter_id}}">
+    <view class="block-pair" bindtap="editScooter" data-id="{{scooter.id}}">
       <image mode="aspectFill" src='{{scooter.picture}}' 
             class="scooter-img"/>
             <text class="p">{{scooter.model}}</text>

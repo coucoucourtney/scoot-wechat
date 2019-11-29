@@ -75,7 +75,7 @@ Page({
     let newBooking = {};
     newBooking.confirmation = true
     newBooking.scooter_id = event.currentTarget.dataset.id
-    newBooking.user_id = 24
+    newBooking.user_id = 1
     newBooking.booking_date = date
     console.log(newBooking);
 

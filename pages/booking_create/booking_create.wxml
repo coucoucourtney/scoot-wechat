@@ -4,8 +4,8 @@
 
     <!-- <input class="dateInput" ctype="date" name="text" placeholder="YYYY-MM-DD"></input> -->
     <view class="section">
-  <view class="section__title">Pick a pick date</view>
-  <picker mode="date" value="{{date}}" start="2019-11-29" end="2020-12-31" bindchange="bindDateChange">
+  <view class="section__title">Choose date</view>
+  <picker class="date-font" mode="date" value="{{date}}" start="2019-11-29" end="2020-12-31" bindchange="bindDateChange">
     <view class="picker">
       {{date}}
     </view>
