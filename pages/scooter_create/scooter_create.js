@@ -46,7 +46,8 @@ Page({
 
   createScooter: function (event) {
     console.log(event)
-    let id = this.data.user.id
+    // let id = this.data.user.id
+    const id = 2
     let newScooter = {};
     newScooter.model = event.detail.value.model
     newScooter.top_speed = event.detail.value.top_speed
