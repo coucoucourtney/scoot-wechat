@@ -12,8 +12,5 @@
     <view class="btn-size">
       <button class='btn-black' form-type="submit" bindtap="" data-id="{{user.id}}">UPDATE</button>
     </view>
-    <view class="btn-size2">
-      <button class='btn-grey' form-type="submit" bindtap="" data-id="{{user.id}}">DELETE</button>
-    </view>
   </form>
 </view>
