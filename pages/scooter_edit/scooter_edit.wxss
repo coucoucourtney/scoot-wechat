@@ -81,3 +81,21 @@ input {
   border-radius: 10rpx;
   border: 1px solid rgb(163, 163, 163);
 }
+
+.new-img {
+  height: 80px;
+  width: 80px;
+  border: 1px solid lightgrey;
+  margin-bottom: 20rpx;
+}
+
+.button-light {
+  color: rgb(150, 150, 150);
+  background-color: white;
+  padding: 20rpx;
+  padding-top: 25rpx;
+  border-radius: 10rpx;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}

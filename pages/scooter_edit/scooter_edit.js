@@ -1,27 +1,63 @@
 // pages/scooter_edit/scooter_edit.js
 const app = getApp()
 const host = app.globalData.host;
+const AV = require('../../utils/av-weapp-min.js');
 
 Page({
-
-  /**
-   * Page initial data
-   */
   data: {
-
+    items: []
   },
-
+  onLoad: function () {
+  },
   takePhoto: function () {
+    let page = this;
     wx.chooseImage({
       count: 1,
-      sizeType: ['original'],
+      sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
       success: function (res) {
-        var tempFilePaths = res.tempFilePaths
-        console.log(tempFilePaths)
+        let tempFilePath = res.tempFilePaths[0];
+        page.setData({
+          tempFilePath
+        })
+        new AV.File('file-name', {
+          blob: {
+            uri: tempFilePath,
+          },
+        }).save().then(
+          file => {
+            console.log(file.url());
+            let imgUrl = file.url();
+            page.setData({
+              imgUrl
+            })
+          }
+        ).catch(console.error);
       }
+    });
+  },
+
+  previewMyImage: function (files) {
+    wx.previewImage({
+      current: '',
+      urls: files
     })
   },
+
+  //   < image bindtap = "takePhoto" class= "scooter-image" src = "{{scooter.picture}}" ></image >
+
+  // <image src='{{tempFilePath}}'></image>
+
+  // previewNew: function (tempFilePath) {
+  //   wx.previewNew({
+  //     if(tempFilePath) {
+  //       return tempFilePath
+  //     } else {
+  //     return scooter.picture
+  //     }
+  //   }), 
+  // },
+
   /**
    * Lifecycle function--Called when page load
    */
@@ -58,6 +94,7 @@ Page({
     newScooter.top_speed = event.detail.value.top_speed
     newScooter.location = event.detail.value.location
     newScooter.price = event.detail.value.price
+    newScooter.picture = this.data.imgUrl;
     wx.request({
       url: host + `users/${id}`,
       method: 'put',

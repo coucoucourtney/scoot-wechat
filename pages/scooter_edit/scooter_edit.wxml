@@ -1,16 +1,25 @@
 <view class="title">
-  <image class="scooter-image" src="{{scooter.picture}}"></image>
+
+  <image bindtap="takePhoto" class="scooter-image" src="{{scooter.picture}}"></image>
+
+  
   <view class="h1">Update your scooter</view>
 </view>
 
 <view class='new-form'>
-  <form class="booking-form" bindsubmit="createBooking">
+  <form class="booking-form" bindsubmit="updateScooter">
     <input name="text" placeholder="Model"></input>
     <input name="text" placeholder="Year"></input>
     <input name="text" placeholder="Battery"></input>
     <input name="text" placeholder="Top speed"></input>
     <input name="text" placeholder="Location"></input>
     <input name="text" placeholder="Price"></input>
+
+    <image class="new-img" src='{{tempFilePath}}'></image>
+    <view class="btn-size2">
+      <button class='button-light' bindtap="takePhoto">Update your picture</button>
+    </view>
+
     <view class="btn-size">
       <button class='btn-black' form-type="submit" bindtap="" data-id="{{scooter.id}}">UPDATE</button>
     </view>
