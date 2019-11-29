@@ -29,18 +29,27 @@ Page({
     years: years,
     year: date.getFullYear(),
     months: months,
-    month: 2,
+    month: 11,
     days: days,
-    day: 2,
+    day: 30,
     value: [9999, 1, 1],
+    date: '2019-11-29'
   },
 
-  bindChange: function (e) {
-    const val = e.detail.value
+  // bindChange: function (e) {
+  //   const that = this
+  //   const val = e.detail.value
+  //   that.setData({
+  //     year: that.data.years[val[0]],
+  //     month: that.data.months[val[1]],
+  //     day: that.data.days[val[2]]
+  //   })
+  // },
+
+  bindDateChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      year: this.data.years[val[0]],
-      month: this.data.months[val[1]],
-      day: this.data.days[val[2]]
+      date: e.detail.value
     })
   },
 
@@ -67,6 +76,7 @@ Page({
     newBooking.confirmation = true
     newBooking.scooter_id = event.currentTarget.dataset.id
     newBooking.user_id = 24
+    newBooking.booking_date = date
     console.log(newBooking);
   
     wx.request({
