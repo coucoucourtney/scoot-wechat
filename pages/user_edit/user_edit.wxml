@@ -9,7 +9,11 @@
     <input name="description" value="{{user.description}}"placeholder="Description"></input>
     <input name="phone_number" value="{{user.phone_number}}" placeholder="Phone number"></input>
     <input name="location" value="{{user.location}}"placeholder="Location"></input>
-    <button class='btn-black' form-type="submit" bindtap="" data-id="{{user.id}}">UPDATE</button>
-    <button class='btn-grey' form-type="submit" bindtap="" data-id="{{user.id}}">DELETE</button>
+    <view class="btn-size">
+      <button class='btn-black' form-type="submit" bindtap="" data-id="{{user.id}}">UPDATE</button>
+    </view>
+    <view class="btn-size2">
+      <button class='btn-grey' form-type="submit" bindtap="" data-id="{{user.id}}">DELETE</button>
+    </view>
   </form>
 </view>
