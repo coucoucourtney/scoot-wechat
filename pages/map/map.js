@@ -7,13 +7,31 @@ Page({
   data: {
     markers: [
       {
+
         iconPath: "/images/icons/user_marker.png", // **1
+
         id: 0,
         latitude: 31.22352,
         longitude: 121.45591,
+        width: 30,
+        height: 45
+      },//, add more markers here
+      {
+        iconPath: "/images/icons/scoot_marker.png", // **1
+        id: 1,
+        latitude: 31.22363,
+        longitude: 121.45319,
         width: 40,
         height: 40
-      }//, add more markers here
+      },
+      {
+        iconPath: "/images/icons/scoot_marker.png", // **1
+        id: 1,
+        latitude: 31.22463,
+        longitude: 121.45419,
+        width: 40,
+        height: 40
+      }
     ]
   },
 
