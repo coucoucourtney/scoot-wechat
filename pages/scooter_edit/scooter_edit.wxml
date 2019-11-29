@@ -1,13 +1,13 @@
 <view class="title">
 
-  <image bindtap="takePhoto" class="scooter-image" src="{{scooter.picture}}"></image>
+  <image class="scooter-image" src="{{scooter.picture}}"></image>
 
   
   <view class="h1">Update your scooter</view>
 </view>
 
 <view class='new-form'>
-  <form class="booking-form" bindsubmit="updateScooter">
+  <form class="booking-form" bindsubmit="editScooter">
     <input name="text" placeholder="Model"></input>
     <input name="text" placeholder="Year"></input>
     <input name="text" placeholder="Battery"></input>

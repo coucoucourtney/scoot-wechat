@@ -44,20 +44,6 @@ Page({
     })
   },
 
-  //   < image bindtap = "takePhoto" class= "scooter-image" src = "{{scooter.picture}}" ></image >
-
-  // <image src='{{tempFilePath}}'></image>
-
-  // previewNew: function (tempFilePath) {
-  //   wx.previewNew({
-  //     if(tempFilePath) {
-  //       return tempFilePath
-  //     } else {
-  //     return scooter.picture
-  //     }
-  //   }), 
-  // },
-
   /**
    * Lifecycle function--Called when page load
    */
@@ -84,21 +70,21 @@ Page({
     })
   },
 
-  updateScooter: function (event) {
+  editScooter: function (event) {
     console.log(event)
     let id = this.data.user.id
-    let newUser = {};
-    newScooter.model = event.detail.value.model
-    newScooter.year = event.detail.value.year
-    newScooter.battery = event.detail.value.battery
-    newScooter.top_speed = event.detail.value.top_speed
-    newScooter.location = event.detail.value.location
-    newScooter.price = event.detail.value.price
-    newScooter.picture = this.data.imgUrl;
+    let editScooter = {};
+    editScooter.model = event.detail.value.model
+    editScooter.year = event.detail.value.year
+    editScooter.battery = event.detail.value.battery
+    editScooter.top_speed = event.detail.value.top_speed
+    editScooter.location = event.detail.value.location
+    editScooter.price = event.detail.value.price
+    editScooter.picture = this.data.imgUrl;
     wx.request({
       url: host + `users/${id}`,
-      method: 'put',
-      data: newUser,
+      method: 'patch',
+      data: editScooter,
       success: function (res) {
         console.log(res)
         const id = res.data.id
