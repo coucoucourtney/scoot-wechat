@@ -45,9 +45,9 @@ Page({
     });
 },
 
-  goToNewScooterPage: function(){
+  goToNewScooterPage: function() {
     wx.navigateTo({
-      pagePath: "pages/scooter_create/scooter_create",
+      url: "/pages/scooter_create/scooter_create",
     })
   },
 
