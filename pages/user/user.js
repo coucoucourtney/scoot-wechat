@@ -8,7 +8,16 @@ Page({
    * Page initial data
    */
   data: {
-
+    scooters: [
+      { picture: 'https://images.unsplash.com/photo-1560693512-85fb8bc0c7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80', model: 'XYZ' },
+      { picture: 'https://images.unsplash.com/photo-1560693512-85fb8bc0c7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80', model: 'XYZ' },
+      { picture: 'https://images.unsplash.com/photo-1560693512-85fb8bc0c7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80', model: 'XYZ' },
+      { picture: 'https://images.unsplash.com/photo-1560693512-85fb8bc0c7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80', model: 'XYZ' },
+      { picture: 'https://images.unsplash.com/photo-1560693512-85fb8bc0c7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80', model: 'XYZ' },
+      { picture: 'https://images.unsplash.com/photo-1560693512-85fb8bc0c7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80', model: 'XYZ' },
+      { picture: 'https://images.unsplash.com/photo-1560693512-85fb8bc0c7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80', model: 'XYZ' },
+      { picture: 'https://images.unsplash.com/photo-1560693512-85fb8bc0c7a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80', model: 'XYZ' }
+    ]
   },
 
   /**
@@ -16,19 +25,15 @@ Page({
    */
   onLoad: function (options) {
     // need this to call the id number from login
-    const page = this
+    let userId = options.id? options.id : 1;
+    this.setData({
+      userId
+    })
+    
     // const id = options.id
     // console.log(1, options)
     // console.log(options)
-    const id = 2
-    wx.request({
-      url: host + `users/${id}`,
-      success: function (res) {
-        const user = res.data
-        console.log(user)
-        page.setData({ user })
-      }
-    })
+
   },
 
   /**
@@ -41,9 +46,19 @@ Page({
   /**
    * Lifecycle function--Called when page show
    */
-  // onShow: function () {
-
-  // },
+  onShow: function () {
+    let page = this
+    let id = this.data.userId || 1;
+    wx.request({
+      url: host + `users/${id}`,
+      success: function (res) {
+        const user = res.data
+        // const scooters = user.scooters;
+        const scooters = page.data.scooters;
+        page.setData({ user, scooters })
+      }
+    })
+  },
 
   /**
    * Lifecycle function--Called when page hide
