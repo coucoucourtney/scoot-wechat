@@ -82,6 +82,8 @@
   height: 60rpx;
   width: 60rpx;
   border-radius: 50%;
+  /* margin-right: 15rpx; */
+  /* padding-right: 15rpx; */
 }
 
 .card-product-infos{
@@ -107,7 +109,11 @@
 
 .p{
   font-size: 22rpx;
+  width: 160rpx;
   font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price-section{
@@ -119,7 +125,7 @@
   /* align-content: center; not working*/
   margin-top: 10rpx;
   align-items: flex-end;
-  margin-left: 55rpx;
+  margin-left: 10rpx;
   margin-right: 10rpx;
 }
 
