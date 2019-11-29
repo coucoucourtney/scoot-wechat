@@ -84,6 +84,17 @@ Page({
   loadScooterBookings: function (){
     // 
   },
+
+
+  goToConfirmation: function (){
+    // goToConfirmation: function (e) {
+    // console.log(event)
+    // let id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '/pages/confirmation/confirmation'
+      // url: `/pages/show/show?id=${id}`
+    })
+  },
   /**
    * Page event handler function--Called when user drop down
    */
