@@ -42,3 +42,10 @@ input {
   margin-bottom: 30rpx;
   font-weight: bold;
 }
+
+.btn-size {
+  margin: 0 auto;
+  width: 640rpx;
+  background-color: black;
+  border-radius: 10rpx;
+}

@@ -28,12 +28,6 @@
   </view>
 </view>
 
-<button class="btn-dark" bindtap="goToBookingPage" data-id="{{scooter.id}}">BOOK</button>
-
-
-
-<view class="footer">
- <navigator url="#"><image src=""></image></navigator>
- <navigator url="#"><image src=""></image></navigator>
- <navigator url="#"><image src=""></image></navigator>
+<view class="btn-size">
+  <button class="btn-dark" bindtap="goToBookingPage" data-id="{{scooter.id}}">BOOK</button>
 </view>

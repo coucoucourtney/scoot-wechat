@@ -11,7 +11,11 @@
     <input name="text" placeholder="Top speed"></input>
     <input name="text" placeholder="Location"></input>
     <input name="text" placeholder="Price"></input>
-    <button class='btn-black' form-type="submit" bindtap="" data-id="{{scooter.id}}">UPDATE</button>
-    <button class='btn-grey' form-type="submit" bindtap="goToUserPage" data-id="{{scooter.id}}">DELETE</button>
+    <view class="btn-size">
+      <button class='btn-black' form-type="submit" bindtap="" data-id="{{scooter.id}}">UPDATE</button>
+    </view>
+    <view class="btn-size2">
+      <button class='btn-grey' form-type="submit" bindtap="goToUserPage" data-id="{{scooter.id}}">DELETE</button>
+    </view>
   </form>
 </view>

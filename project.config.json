@@ -45,12 +45,14 @@
 		"game": {
 			"list": []
 		},
+
 		"gamePlugin": {
 			"current": -1,
 			"list": []
 		},
 		"miniprogram": {
 			"current": 8,
+
 			"list": [
 				{
 					"id": 0,
@@ -120,6 +122,20 @@
 					"name": "user edit",
 					"pathName": "pages/user_edit/user_edit",
 					"query": "",
+					"scene": null
+
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/booking_request/booking_request",
+					"pathName": "pages/booking_request/booking_request",
 					"scene": null
 				}
 			]

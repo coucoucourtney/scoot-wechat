@@ -42,14 +42,11 @@
 .btn-grey {
   width: 200rpx;
   color: rgb(163, 163, 163);
-  border: 1px solid rgb(163, 163, 163);
   background-color: white;
   padding: 20rpx;
-  padding-top: 25rpx;
   border-radius: 10rpx;
   transition: opacity 0.3s ease;
   font-size: 12px;
-  margin-top: 20rpx;
   font-weight: light;
 }
 
@@ -65,4 +62,21 @@ input {
   width: 600rpx;
   text-align: left;
   font-size: 12px;
+}
+
+
+.btn-size {
+  margin: 0 auto;
+  width: 640rpx;
+  background-color: black;
+  border-radius: 10rpx;
+  margin-bottom: 25rpx;
+}
+
+.btn-size2 {
+  margin: 0 auto;
+  width: 640rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  border: 1px solid rgb(163, 163, 163);
 }
