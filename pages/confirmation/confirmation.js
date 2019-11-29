@@ -20,11 +20,13 @@ Page({
     const page = this
     console.log(options)
     wx.request({
-      url: `https://rent-scoot.herokuapp.com/api/v1/scooters/${id}`,
+      url: host + `bookings/${id}`,
+      // id is scooter id
       success: function (res) {
-        const scooter = res.data
-        console.log(scooter)
-        page.setData({ scooter })
+        const bookings = res.data
+        console.log(bookings)
+        const booking = bookings.id.last
+        page.setData({ booking })
       }
     })
   },

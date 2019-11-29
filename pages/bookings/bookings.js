@@ -29,7 +29,15 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    let page = this
+    let id = this.data.userId || 1;
+    wx.request({
+      url: host + `bookings/${id}`,
+      success: function (res) {
+        const bookings = res.data
+        page.setData({ bookings })
+      }
+    })
   },
 
   /**
@@ -42,10 +50,24 @@ Page({
   /**
    * Lifecycle function--Called when page unload
    */
-  onUnload: function () {
+  onUnload: function (options) {
+    // your  bookings
+    // grab user id from scooter booking page - > scooter.user_id
+    // load all your bookings through
+    // booking.user_id 
+    // put booking instance into array
+    // make sure new booking is added
 
+    // bookings for your scooter
+    // load all bookings
+    // booking.scooter_id == scooter.id
+    // 
+    //switch tab
   },
 
+  loadScooterBookings: function (){
+    // 
+  },
   /**
    * Page event handler function--Called when user drop down
    */
