@@ -20,7 +20,7 @@ Page({
     // const id = options.id
     // console.log(1, options)
     // console.log(options)
-    const id = 23
+    const id = 2
     wx.request({
       url: host + `users/${id}`,
       success: function (res) {

@@ -53,7 +53,7 @@ Page({
 
   scrollToDiv: function() {
     wx.pageScrollTo	({
-      scrollTop: 10000,
+      scrollTop: 380,
     })
   },
 
