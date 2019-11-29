@@ -68,7 +68,7 @@ Page({
     newBooking.scooter_id = event.currentTarget.dataset.id
     newBooking.user_id = 24
     console.log(newBooking);
-  
+
     wx.request({
       url: host + 'bookings',
 
