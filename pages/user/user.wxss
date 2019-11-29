@@ -25,7 +25,7 @@
 }
 
 .h1-name {
-  font-size: 35rpx;
+  font-size: 30rpx;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -74,6 +74,15 @@
   flex-direction: column;
   align-items: center;
   padding: 25rpx;
+}
+
+.block-pair .h1 {
+  font-size: 12px;
+  margin-bottom: 20rpx;
+}
+
+.block-pair .p {
+  font-size: 12px;
 }
 
 .scooter-section{

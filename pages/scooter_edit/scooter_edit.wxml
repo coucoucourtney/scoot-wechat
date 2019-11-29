@@ -1,6 +1,8 @@
 <view class="title">
 
-  <image class="scooter-image" src="{{scooter.picture}}"></image>
+  <!-- <image class="scooter-image" src="{{scooter.picture}}"></image> -->
+  <image class="scooter-image" src="https://images.unsplash.com/photo-1531166170349-20878432d2eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></image>
+  
 
   
   <view class="h1">Update your scooter</view>
