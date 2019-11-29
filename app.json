@@ -3,13 +3,16 @@
     "pages/index/index",
     "pages/show/show",
     "pages/user/user",
-"pages/scooter_edit/scooter_edit",
-"pages/scooter_create/scooter_create",
-"pages/booking_create/booking_create",
-"pages/user_edit/user_edit",
-"pages/bookings/bookings",
-"pages/confirmation/confirmation",
-"pages/map/map"
+
+    "pages/scooter_edit/scooter_edit",
+    "pages/scooter_create/scooter_create",
+    "pages/booking_create/booking_create",
+    "pages/user_edit/user_edit",
+    "pages/bookings/bookings",
+    "pages/confirmation/confirmation",
+    "pages/booking_request/booking_request"
+    "pages/map/map"
+
   ],
   "tabBar": {
     "color": "#7A7E83",

@@ -1,4 +1,4 @@
-// pages/scooter_edit/scooter_edit.js
+// pages/booking_request/booking_request.js
 Page({
 
   /**
@@ -6,18 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  takePhoto: function () {
-    wx.chooseImage({
-      count: 1,
-      sizeType: ['original'],
-      sourceType: ['album', 'camera'],
-      success: function (res) {
-        var tempFilePaths = res.tempFilePaths
-        console.log(tempFilePaths)
-      }
-    })
   },
 
   /**

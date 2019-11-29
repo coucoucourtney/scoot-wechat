@@ -16,9 +16,10 @@ Page({
     console.log(event)
     let id = event.currentTarget.dataset.id
     wx.navigateTo({
-      url: `/pages/show/show?id=${id}`,
+      url: `/pages/show/show?id=${id}`
     })
   },
+
   // END OF BIND TAP
 
   //事件处理函数
