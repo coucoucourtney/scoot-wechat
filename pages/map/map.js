@@ -7,7 +7,9 @@ Page({
   data: {
     markers: [
       {
-        iconPath: "/images/icons/user_marker_large.png", // **1
+
+        iconPath: "/images/icons/user_marker.png", // **1
+
         id: 0,
         latitude: 31.22352,
         longitude: 121.45591,

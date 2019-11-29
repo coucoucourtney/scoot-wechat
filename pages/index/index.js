@@ -45,7 +45,7 @@ Page({
     });
 },
 
-  goToNewScooterPage: function(){
+  goToNewScooterPage: function() {
     wx.navigateTo({
       url: "/pages/scooter_create/scooter_create",
     })
@@ -53,7 +53,7 @@ Page({
 
   scrollToDiv: function() {
     wx.pageScrollTo	({
-      scrollTop: 380,
+      scrollTop: 375,
     })
   },
 

@@ -78,7 +78,7 @@ Page({
     newBooking.user_id = 24
     newBooking.booking_date = date
     console.log(newBooking);
-  
+
     wx.request({
       url: host + 'bookings',
 

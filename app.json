@@ -22,18 +22,18 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/icons/scoot.jpg",
-        "selectedIconPath": "images/icons/scoot.jpg"
+        "iconPath": "images/icons/scooter.png",
+        "selectedIconPath": "images/icons/scooter-gray.png"
       },
       {
         "pagePath": "pages/bookings/bookings",
-        "iconPath": "images/icons/booking-history.jpg",
-        "selectedIconPath": "images/icons/booking-history.jpg"
+        "iconPath": "images/icons/list.png",
+        "selectedIconPath": "images/icons/list-gray.png"
       },
       {
         "pagePath": "pages/user/user",
-        "iconPath": "images/icons/user.jpg",
-        "selectedIconPath": "images/icons/user.jpg"
+        "iconPath": "images/icons/helmet.png",
+        "selectedIconPath": "images/icons/helmet-gray.png"
       }
     ]
   },
