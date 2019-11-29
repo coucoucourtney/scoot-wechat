@@ -45,8 +45,14 @@
 		"game": {
 			"list": []
 		},
+
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
-			"current": 11,
+			"current": 8,
+
 			"list": [
 				{
 					"id": 0,
@@ -117,6 +123,7 @@
 					"pathName": "pages/user_edit/user_edit",
 					"query": "",
 					"scene": null
+
 				},
 				{
 					"id": -1,
