@@ -3,7 +3,8 @@
 
 <view class="li">
   <text class="title">Reservation number</text>
-  <text>{{booking.id}}</text>
+  <text>123456</text>
+  <!-- <text>{{booking.id}}</text> -->
   <!-- generate booking number how to-->
 </view>
 
