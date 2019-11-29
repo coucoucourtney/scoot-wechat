@@ -91,11 +91,9 @@ Page({
 
   },
 
-  goToConfirmationPage: function (e) {
-    let id = e.currentTarget.dataset.id
-    console.log(e)
-    wx.navigateTo({
-      url: `/pages/confirmation/confirmation?id=${id}`,
+  goToBookingsPage: function () {
+    wx.switchTab({
+      url: `/pages/bookings/bookings`,
     })
   },
   

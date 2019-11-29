@@ -38,6 +38,22 @@ Page({
         page.setData({ bookings })
       }
     })
+
+    
+  },
+
+  showBooking: function(e) {
+    let page = this
+    let id = this.data.userId || 1;
+    wx.request({
+      url: host + `user/${id}`,
+      success: function (res) {
+        const user = res.data
+        // const scooters = user.booking;
+        const scooters = page.data.scooters;
+        page.setData({ user, scooters })
+      }
+    })
   },
 
   /**

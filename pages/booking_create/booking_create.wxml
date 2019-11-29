@@ -11,7 +11,7 @@
     </view>
   </picker>
 </view>
-    <button class='btn-black' form-type="submit" bindtap="goToConfirmationPage" data-id="{{scooter.id}}">SUBMIT</button>
+    <button class='btn-black' form-type="submit" bindtap="goToBookingsPage" data-id="{{scooter.id}}">SUBMIT</button>
 
   </form>
 </view>

@@ -2,11 +2,12 @@
   overflow: hidden;
   height: 120rpx;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 9px rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
   padding: 10rpx;
   margin-bottom: 15rpx;
+  margin-top: 10rpx;
 }
 
 .card-booking image {
@@ -51,7 +52,8 @@
 
 .title .h1 {
   font-size: 22px;
-  font-weight: bold;
+  /* font-weight: bold; */
+  justify-content: center;
 }
 
 .subtitle {
@@ -62,7 +64,7 @@
 }
 
 .btn-detail {
-  color: blue;
+  color: aquamarine;
   font-size: 14px;
 }
 

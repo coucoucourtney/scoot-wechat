@@ -1,5 +1,4 @@
 <view class="title">
-  <image class="user-image" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"></image>
   <view class="h1">Bookings</view>
 </view>
 
@@ -12,25 +11,32 @@
 
 <!-- <block wx:for="{{}}" wx:key="" wx:for-item=""> -->
 <view class="card-booking">
-  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"></image>
+  <image src="https://images.unsplash.com/photo-1476419972179-ac981d01257e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></image>
+  <!-- <image src="{{booking.user.picture}}"></image> -->
   <view class="card-product-infos">
-    <view class="h2">Date</view>
-    <text class="p">Details</text>
+    <!-- <view class="h2">{{booking.user_id.date}}</view> -->
+    <view class="h2">2019-11-30</view>
+    <text class="p">No.123456</text>
+    <!-- <text class="p">No.{{booking.user.scooter.id}}</text
   </view>
-</view>
-
+  </view>
 <!-- </block> -->
+</view>
+</view>
 
 <view class="subtitle2">
   <text class="h2">Reservations for your scooter</text>
   <navigator class="btn-detail">See all</navigator>
 </view>
-<!-- <block wx:for="{{}}" wx:key="" wx:for-item=""> -->
+<!-- <block wx:for="{{bookings}}" wx:key="" wx:for-item="booking"> -->
 <view class="card-booking">
-  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"></image>
+  <image src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"></image>
+    <!-- <image src="{{booking.scooter.picture}}"></image> -->
   <view class="card-product-infos">
-    <view class="h2">Date</view>
-    <text class="p">Details</text>
+    <view class="h2">2019-11-29</view>
+    <!-- <view class="h2">{{booking.user.scooter.date}}</view> -->
+    <text class="p">No.123458</text>
+    <!-- <text class="p">No.{{booking.user.scooter.id}}</text> -->
   </view>
 </view>
 <!-- </block> -->
